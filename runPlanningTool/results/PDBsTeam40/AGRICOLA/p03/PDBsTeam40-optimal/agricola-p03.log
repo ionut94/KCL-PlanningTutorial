@@ -1,0 +1,528 @@
+INFO     Running translator.
+INFO     translator input: ['domain.pddl', 'problem.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: 1799.92s
+INFO     translator memory limit: 8192 MB
+INFO     callstring: /usr/bin/python /planner/builds/release64/bin/translate/translate.py domain.pddl problem.pddl
+time limit 1799.92 -> (1800, 1801)
+Parsing...
+Parsing: [0.010s CPU, 0.011s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.009s wall-clock]
+Preparing model... [0.000s CPU, 0.006s wall-clock]
+Generated 258 rules.
+Computing model... [0.640s CPU, 0.639s wall-clock]
+60055 relevant atoms
+1572 auxiliary atoms
+61627 final queue length
+223775 total queue pushes
+Completing instantiation... [5.450s CPU, 5.459s wall-clock]
+Instantiating: [6.140s CPU, 6.127s wall-clock]
+Computing fact groups...
+Finding invariants...
+44 initial candidates
+Finding invariants: [0.080s CPU, 0.089s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+104 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.090s CPU, 0.092s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.190s CPU, 0.196s wall-clock]
+Translating task: [4.050s CPU, 4.058s wall-clock]
+63815 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+36 propositions removed
+Detecting unreachable propositions: [1.850s CPU, 1.856s wall-clock]
+Translator variables: 101
+Translator derived variables: 0
+Translator facts: 239
+Translator goal facts: 1
+Translator mutex groups: 8
+Translator total mutex groups size: 53
+Translator operators: 59407
+Translator axioms: 0
+Translator task size: 670519
+Translator peak memory: 639720 KB
+Writing output... [0.570s CPU, 0.569s wall-clock]
+Done! [12.880s CPU, 12.879s wall-clock]
+INFO     Running preprocessor (release64).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: 1786.95s
+INFO     preprocessor memory limit: 8192 MB
+INFO     callstring: /planner/builds/release64/bin/preprocess < output.sas
+time limit 1786.95 -> (1787, 1788)
+Building causal graph...
+The causal graph is not acyclic.
+95 variables of 101 necessary
+0 of 8 mutex groups necessary.
+59407 of 59407 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 227 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=9025, notReached=41904, spurious=600
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=45751, notReached=5178, spurious=600
+40271 operators are spurious because were not triggered
+Unreachable proposition: Atom harvest_phase(stage4, harvest_feeding)
+Unreachable proposition: Atom harvest_phase(stage4, harvest_breeding)
+H^2 mutexes added fw: 4278, unreachable: 2
+0 of 19136 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=31395, notReached=14356, spurious=5778
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=45727, notReached=24, spurious=5778
+0 operators are spurious because were not triggered
+H^2 mutexes added bw: 24, unreachable: 0
+0 of 19136 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=9025, notReached=36702, spurious=5802
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=45727, notReached=0, spurious=5802
+0 operators are spurious because were not triggered
+H^2 mutexes added fw: 0, unreachable: 0
+0 of 19136 operators detected as spurious
+Total mutex and disambiguation time: 4.60838 iterations: 3
+2151 of 2151 mutex groups necessary.
+19136 of 59407 operators necessary.
+0 of 0 axiom rules necessary.
+Change id of operators: 19136
+Change id of mutexes
+Change id of goals
+Change id of initial state
+Remove unreachable facts from variables: 95
+2151 of 2151 mutex groups necessary.
+19136 of 19136 operators necessary.
+0 of 0 axiom rules necessary.
+Updating causal graph and pruning unnecessary facts
+93 variables of 95 of 101 necessary
+The causal graph is not acyclic.
+92 variables of 93 necessary
+2100 of 2151 mutex groups necessary.
+19136 of 19136 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor variables: 92
+Preprocessor facts: 221
+Preprocessor derived variables: 0
+Preprocessor operators: 19136
+Preprocessor mutex groups: 2100
+Preprocessor task size: 205507
+Writing output...
+Preprocessor peak memory: 150692 KB
+done
+INFO     Running search (release64).
+INFO     search input: output
+INFO     search arguments: ['--search', 'astar(cpdbs_symbolic(genetic_ss(use_ucb=true,num_episodes=10000000,num_collections=1,pdb_factory=symbolic,genetic_time_limit=900,time_limit=1.0,create_perimeter=true,use_first_goal_vars=false,use_norm_dist=true)))']
+INFO     search time limit: 1780.77s
+INFO     search memory limit: 8192 MB
+INFO     search executable: /planner/builds/release64/bin/downward
+INFO     callstring: /planner/builds/release64/bin/downward --search 'astar(cpdbs_symbolic(genetic_ss(use_ucb=true,num_episodes=10000000,num_collections=1,pdb_factory=symbolic,genetic_time_limit=900,time_limit=1.0,create_perimeter=true,use_first_goal_vars=false,use_norm_dist=true)))' --internal-plan-file sas_plan < output
+time limit 1780.77 -> (1781, 1782)
+reading input... [t=0.0016447s]
+done reading input! [t=0.131237s]
+packing state variables...done! [t=0.131267s]
+Variables: 92
+Facts: 221
+Bytes per state: 16
+Building successor generator...done! [t=0.180512s]
+done initalizing global data [t=0.180539s]
+parsing options
+parsing options
+building causal graph...done! [t=0.0202797s]
+Sym variable order: 91 6 5 46 43 47 44 42 45 64 65 63 14 8 7 1 10 11 86 2 3 87 75 76 74 55 90 56 54 68 58 62 60 61 59 23 22 24 69 34 29 39 78 79 41 32 27 31 33 81 82 89 73 71 9 25 72 70 15 88 67 66 57 80 85 53 48 50 49 83 51 77 52 84 35 28 36 40 38 30 37 26 12 16 18 17 20 19 21 13 0 4 
+Initializing Symbolic Variables
+Num variables: 92 => 109
+Initialize Symbolic Manager(218, 73394, 16000000, 0)
+Generating binary variables
+Symbolic Variables... Done.
+hybrid_pdb_size:1
+create_perimeter:1
+initial pdb type:symbolic
+initial time_limit per pdb:1
+reg_bin_pack_only:0
+rel_analysis_only:0
+single_pattern_only:0
+use_ucb:1
+size_selection:0
+sampling_method:use_ss
+using normal distribution to choose size logs
+sampling method,SS:1,ipdb_walk:0,avg_h:0
+recompute_max_additive_subsets is off
+after get_variables
+variables.size:92
+i:0
+i:1
+i:2
+i:3
+i:4
+i:5
+i:6
+i:7
+i:8
+i:9
+i:10
+i:11
+i:12
+i:13
+i:14
+i:15
+i:16
+i:17
+i:18
+i:19
+i:20
+i:21
+i:22
+i:23
+i:24
+i:25
+i:26
+i:27
+i:28
+i:29
+i:30
+i:31
+i:32
+i:33
+i:34
+i:35
+i:36
+i:37
+i:38
+i:39
+i:40
+i:41
+i:42
+i:43
+i:44
+i:45
+i:46
+i:47
+i:48
+i:49
+i:50
+i:51
+i:52
+i:53
+i:54
+i:55
+i:56
+i:57
+i:58
+i:59
+i:60
+i:61
+i:62
+i:63
+i:64
+i:65
+i:66
+i:67
+i:68
+i:69
+i:70
+i:71
+i:72
+i:73
+i:74
+i:75
+i:76
+i:77
+i:78
+i:79
+i:80
+i:81
+i:82
+i:83
+i:84
+i:85
+i:86
+i:87
+i:88
+i:89
+i:90
+i:91
+Whole pattern:[ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 ]
+overall_problem_size:2.87724e+31
+initial_max_target_size:10,initial_min_target_size:4,time_limit(per pattern):1
+starting timings
+node gen_and_exp_cost:8.88567e-06,node_counter:113460
+Setting num_collections to 1 no matter the input,peak memory:1065576
+seeding with creating_perimeter
+g_timer before calling ZeroOnePDB to generate initial perimeter:2.73353
+g_timer after calling ZeroOnePDB to generate initial perimeter:3.9474
+g_timer after calling terminate_creation to push perimeter into best_pdb_collections354.342
+g_timer after calling terminate_creation to push perimeter into best_pdb_collections354.342
+perimeter h value:116
+time:354.342,time to clear dominated heuristics every 100 secs
+time:354.342,finished clearing dominated heuristics every 100 secs
+episode[,0,],generated_candidate,time:,354.354,size:,32,generation_time:,0.0116802,episode:,0,finished:,1,bin_packed:,1,Peak Memory:2749944,current_memory:2749944,bin_rel_calls:1,bin_reg_calls:2,candidate_count:2
+no initial heuristic yet
+initial best_pattern==1st collection:
+best_patterns:[ ]
+best_patterns:[ ]
+best_patterns:[ ]
+best_patterns:[ 14 22 24 91 ]
+best_patterns:[ ]
+	get_best_value_zero_one best_heuristic initial h:116
+	get_best_value best_heuristic initial h:116
+time:354.354,time to clear dominated heuristics every 100 secs
+time:354.354,finished clearing dominated heuristics every 100 secs
+timer:,354.355,best heuristic initial value raised to:116
+Running SS sampling again, SS tree is almost empty
+initial threshold:116
+best initial threshold raised to:492,probe states:520
+exceeded 20K max SS_states sampled,current size:20002,probe:784,threshold:708
+exceeded 20K max SS_states sampled,current size:20002,threshold:708
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20002
+time:355.337,time to clear dominated heuristics every 100 secs
+time:355.337,finished clearing dominated heuristics every 100 secs
+g_timer:355.567s,max_target_size raised back to:11,initial_max_target_size:20
+time:355.567s,current_episode:6,increased min_target_size to:,5,max_size:,11
+g_timer:356.501s,max_target_size raised back to:12,initial_max_target_size:20
+time:356.501s,current_episode:24,increased min_target_size to:,6,max_size:,12
+g_timer:357.745s,max_target_size raised back to:13,initial_max_target_size:20
+time:357.745s,current_episode:43,increased min_target_size to:,7,max_size:,13
+g_timer:358.721s,max_target_size raised back to:14,initial_max_target_size:20
+time:358.721s,current_episode:55,increased min_target_size to:,8,max_size:,14
+time:359.004,valid_pattern_counter:100
+time:,359.763,bin_packed:,1,adding1 best_heuristic,episode:,65,collection:,0,new raised_ratio:,1,actual_states_ratio:,1,total_nodes:4.95171e+11,pruned_states:4.95171e+11,fitness:,276.107,sampled_states:,20002,initial_value:,344,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:1,size:1.87905e+12,pdb_gen_time:0.471034,episode:,65,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2773616,saved_time:,4.69144e+06
+termination_time:2.431e-06
+time:,359.794,current_episode:,65,best_heuristics count:,2,online_sampling_time:,0.0224904,pdb_generation_time:,0.0308031,pdb_size:,1.87905e+12,disjoint:,0,raised:,20002,disjoint_patterns:,0,sampled_states:,20002,min_improv_ratio:,0
+timer:,360.272,best heuristic initial value raised to:344
+initial threshold:708
+exceeded 20K max SS_states sampled,current size:20016,probe:567,threshold:849
+exceeded 20K max SS_states sampled,current size:20016,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20016
+time:,360.985,bin_packed:,0,adding1 best_heuristic,episode:,66,collection:,0,new raised_ratio:,0.953887,actual_states_ratio:,0.953887,total_nodes:8.64622e+12,pruned_states:7.57834e+12,fitness:,265.409,sampled_states:,20016,initial_value:,345,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:2,size:3.7581e+12,pdb_gen_time:0.477492,episode:,66,finished:,1,bin_packed:,0,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2778208,saved_time:,7.55442e+07
+termination_time:3.017e-06
+time:361.055s,last_improv_collection_size:3.7581e+12
+time:,361.055,current_episode:,66,best_heuristics count:,3,online_sampling_time:,0.0235057,pdb_generation_time:,0.0696925,pdb_size:,3.7581e+12,disjoint:,0,raised:,19093,disjoint_patterns:,0,sampled_states:,20016,min_improv_ratio:,0
+timer:,361.559,best heuristic initial value raised to:345
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20001,probe:580,threshold:849
+exceeded 20K max SS_states sampled,current size:20001,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20001
+time:,361.926,bin_packed:,0,adding1 best_heuristic,episode:,67,collection:,0,new raised_ratio:,0.908605,actual_states_ratio:,0.908605,total_nodes:5.87816e+13,pruned_states:1.24214e+13,fitness:,289.831,sampled_states:,20001,initial_value:,341,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:3,size:1.87905e+12,pdb_gen_time:0.503296,episode:,67,finished:,1,bin_packed:,0,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2782724,saved_time:,1.05019e+08
+termination_time:1.665e-06
+time:362.03s,last_improv_collection_size:1.87905e+12
+time:,362.03,current_episode:,67,best_heuristics count:,4,online_sampling_time:,0.0233829,pdb_generation_time:,0.104045,pdb_size:,1.87905e+12,disjoint:,0,raised:,18173,disjoint_patterns:,0,sampled_states:,20001,min_improv_ratio:,0
+g_timer:362.03s,max_target_size raised back to:15,initial_max_target_size:20
+time:362.03s,current_episode:68,increased min_target_size to:,9,max_size:,15
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20007,probe:616,threshold:849
+exceeded 20K max SS_states sampled,current size:20007,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20007
+g_timer:364.19s,max_target_size raised back to:16,initial_max_target_size:20
+time:364.19s,current_episode:83,increased min_target_size to:,10,max_size:,16
+time:,364.952,bin_packed:,1,adding1 best_heuristic,episode:,87,collection:,0,new raised_ratio:,0.277303,actual_states_ratio:,0.277303,total_nodes:4.49359e+12,pruned_states:2.78082e+11,fitness:,272.07,sampled_states:,20007,initial_value:,318,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:4,size:1.20259e+15,pdb_gen_time:0.568831,episode:,87,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2803652,saved_time:,457373
+termination_time:2.208e-06
+time:365.103s,last_improv_collection_size:1.20259e+15
+time:,365.103,current_episode:,87,best_heuristics count:,5,online_sampling_time:,0.0283312,pdb_generation_time:,0.15019,pdb_size:,1.20259e+15,disjoint:,1,raised:,5548,disjoint_patterns:,1,sampled_states:,20007,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20010,probe:685,threshold:849
+exceeded 20K max SS_states sampled,current size:20010,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20010
+time:,366.227,bin_packed:,0,adding1 best_heuristic,episode:,88,collection:,0,new raised_ratio:,0.701499,actual_states_ratio:,0.701499,total_nodes:2.33115e+12,pruned_states:1.93518e+12,fitness:,323.888,sampled_states:,20010,initial_value:,345,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:5,size:7.51619e+14,pdb_gen_time:0.617475,episode:,88,finished:,1,bin_packed:,0,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2812540,saved_time:,2.34678e+07
+termination_time:1.957e-06
+time:366.433s,last_improv_collection_size:7.51619e+14
+time:,366.433,current_episode:,88,best_heuristics count:,6,online_sampling_time:,0.0260731,pdb_generation_time:,0.206375,pdb_size:,7.51619e+14,disjoint:,1,raised:,14037,disjoint_patterns:,1,sampled_states:,20010,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20001,probe:156,threshold:849
+exceeded 20K max SS_states sampled,current size:20001,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20001
+g_timer:366.832s,max_target_size raised back to:17,initial_max_target_size:20
+time:366.832s,current_episode:94,increased min_target_size to:,11,max_size:,17
+g_timer:368.111s,max_target_size raised back to:18,initial_max_target_size:20
+time:368.111s,current_episode:102,increased min_target_size to:,12,max_size:,18
+g_timer:368.362s,max_target_size raised back to:19,initial_max_target_size:20
+time:368.362s,current_episode:109,increased min_target_size to:,13,max_size:,19
+time:,377.777,bin_packed:,1,adding1 best_heuristic,episode:,115,collection:,0,new raised_ratio:,0.576621,actual_states_ratio:,0.576621,total_nodes:2.29037e+11,pruned_states:4.1574e+10,fitness:,133.644,sampled_states:,20001,initial_value:,370,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:6,size:3.34955e+19,pdb_gen_time:1.09175,episode:,115,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2857468,saved_time:,415936
+termination_time:1.577e-06
+time:378.056s,last_improv_collection_size:3.34955e+19
+time:,378.056,current_episode:,115,best_heuristics count:,7,online_sampling_time:,0.0316285,pdb_generation_time:,0.278872,pdb_size:,3.34955e+19,disjoint:,1,raised:,11533,disjoint_patterns:,1,sampled_states:,20001,min_improv_ratio:,0
+g_timer:378.056s,max_target_size raised back to:20,initial_max_target_size:20
+time:378.056s,current_episode:116,increased min_target_size to:,14,max_size:,20
+timer:,378.057,best heuristic initial value raised to:370
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20081,probe:513,threshold:849
+exceeded 20K max SS_states sampled,current size:20081,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20081
+time:380.203s,current_episode:125,increased min_target_size to:,15,max_size:,20
+time:380.446s,current_episode:132,increased min_target_size to:,16,max_size:,20
+time:,383.268,bin_packed:,1,adding1 best_heuristic,episode:,136,collection:,0,new raised_ratio:,0.155968,actual_states_ratio:,0.155968,total_nodes:7.57851e+11,pruned_states:1.86639e+11,fitness:,263.949,sampled_states:,20081,initial_value:,442,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:7,size:8.37388e+18,pdb_gen_time:1.14712,episode:,136,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2868168,saved_time:,2.30889e+06
+termination_time:1.675e-06
+time:383.506s,last_improv_collection_size:8.37388e+18
+time:,383.506,current_episode:,136,best_heuristics count:,8,online_sampling_time:,0.037517,pdb_generation_time:,0.237881,pdb_size:,8.37388e+18,disjoint:,1,raised:,3132,disjoint_patterns:,1,sampled_states:,20081,min_improv_ratio:,0
+timer:,384.277,best heuristic initial value raised to:442
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20017,probe:411,threshold:849
+exceeded 20K max SS_states sampled,current size:20017,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20017
+time:386.142,valid_pattern_counter:200
+time:387.079s,current_episode:140,increased min_target_size to:,17,max_size:,20
+time:,398.247,bin_packed:,1,adding1 best_heuristic,episode:,168,collection:,0,new raised_ratio:,0.131888,actual_states_ratio:,0.131888,total_nodes:4.86872e+11,pruned_states:3.51156e+11,fitness:,234.319,sampled_states:,20017,initial_value:,408,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:8,size:2.46291e+16,pdb_gen_time:0.64026,episode:,168,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2885376,saved_time:,5.00522e+06
+termination_time:2.095e-06
+time:398.567s,last_improv_collection_size:2.46291e+16
+time:,398.567,current_episode:,168,best_heuristics count:,9,online_sampling_time:,0.0310228,pdb_generation_time:,0.319816,pdb_size:,2.46291e+16,disjoint:,0,raised:,2640,disjoint_patterns:,0,sampled_states:,20017,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20005,probe:464,threshold:849
+exceeded 20K max SS_states sampled,current size:20005,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20005
+time:400.561,time to clear dominated heuristics every 100 secs
+calling clear_dominated_heuristics with 9 best heuristics and unique_samples:97758
+adding heur[7] to list of heurs
+adding heur[6] to list of heurs
+adding heur[5] to list of heurs
+adding heur[4] to list of heurs
+adding heur[3] to list of heurs
+adding heur[2] to list of heurs
+collection[1] is dominated,eliminating 
+adding heur[0] to list of heurs
+best_pdb_collections size:9,cleaned_best_pdb_collections:8,8,time:0.444414
+time:401.006,finished clearing dominated heuristics every 100 secs
+time:413.491,valid_pattern_counter:300
+g_timer:418.778,running SS again, too long since last improvement:,time_since_last_improv:20.2118,min_improv_time_limit:20
+New limits, precomputation_time_ms:2000
+New limits, precomputation_step_time_ms:1000
+New limits, precomputation nodes:400000
+increased min_improv_time_limit:30,time_limit:1,min_target_size:17,max_target_size:20
+time:,418.778,increasing min_improv_time_limit to,30,pdb_max_size:9e+19,max_target_size:20,min_target_size:17, too long since last improvement found
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20026,probe:442,threshold:849
+exceeded 20K max SS_states sampled,current size:20026,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20026
+time:434.597,valid_pattern_counter:400
+g_timer:449.525,running SS again, too long since last improvement:,time_since_last_improv:30.7465,min_improv_time_limit:30
+New limits, precomputation_time_ms:4000
+New limits, precomputation_step_time_ms:2000
+New limits, precomputation nodes:800000
+increased min_improv_time_limit:45,time_limit:2,min_target_size:17,max_target_size:20
+time:,449.525,increasing min_improv_time_limit to,45,pdb_max_size:1e+17,max_target_size:20,min_target_size:17, too long since last improvement found
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20024,probe:445,threshold:849
+exceeded 20K max SS_states sampled,current size:20024,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20024
+time:465.09,valid_pattern_counter:500
+time:492.325,valid_pattern_counter:600
+time:,494.793,bin_packed:,1,adding1 best_heuristic,episode:,445,collection:,0,new raised_ratio:,0.0390531,actual_states_ratio:,0.0390531,total_nodes:3.04109e+11,pruned_states:1.81941e+11,fitness:,300.217,sampled_states:,20024,initial_value:,436,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:8,size:2.40518e+16,pdb_gen_time:0.734754,episode:,445,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,2991876,saved_time:,2.66607e+06
+termination_time:1.664e-06
+time:495.204s,last_improv_collection_size:2.40518e+16
+time:,495.204,current_episode:,445,best_heuristics count:,9,online_sampling_time:,0.0341886,pdb_generation_time:,0.411105,pdb_size:,2.40518e+16,disjoint:,1,raised:,782,disjoint_patterns:,1,sampled_states:,20024,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20015,probe:480,threshold:849
+exceeded 20K max SS_states sampled,current size:20015,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20015
+time:500.836,time to clear dominated heuristics every 100 secs
+calling clear_dominated_heuristics with 9 best heuristics and unique_samples:110497
+adding heur[7] to list of heurs
+adding heur[6] to list of heurs
+adding heur[5] to list of heurs
+adding heur[4] to list of heurs
+adding heur[3] to list of heurs
+adding heur[2] to list of heurs
+adding heur[1] to list of heurs
+adding heur[0] to list of heurs
+best_pdb_collections size:9,cleaned_best_pdb_collections:9,9,time:0.613122
+time:501.449,finished clearing dominated heuristics every 100 secs
+time:527.931,valid_pattern_counter:700
+time:,533.217,bin_packed:,1,adding1 best_heuristic,episode:,534,collection:,0,new raised_ratio:,0.852611,actual_states_ratio:,0.852611,total_nodes:2.23727e+11,pruned_states:1.64472e+11,fitness:,373.763,sampled_states:,20015,initial_value:,557,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:9,size:1.20259e+16,pdb_gen_time:1.19561,episode:,534,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,3031764,saved_time:,2.69184e+06
+termination_time:2.226e-06
+time:533.712s,last_improv_collection_size:1.20259e+16
+time:,533.712,current_episode:,534,best_heuristics count:,10,online_sampling_time:,0.0376702,pdb_generation_time:,0.495417,pdb_size:,1.20259e+16,disjoint:,0,raised:,17065,disjoint_patterns:,0,sampled_states:,20015,min_improv_ratio:,0
+timer:,534.749,best heuristic initial value raised to:557
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20050,probe:360,threshold:849
+exceeded 20K max SS_states sampled,current size:20050,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20050
+time:,566.766,bin_packed:,1,adding1 best_heuristic,episode:,574,collection:,0,new raised_ratio:,0.282943,actual_states_ratio:,0.282943,total_nodes:3.30843e+10,pruned_states:1.51644e+09,fitness:,282.812,sampled_states:,20050,initial_value:,467,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:10,size:5.23368e+17,pdb_gen_time:0.986162,episode:,574,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,3061136,saved_time:,22.5236
+termination_time:2.025e-06
+time:567.391s,last_improv_collection_size:5.23368e+17
+time:,567.391,current_episode:,574,best_heuristics count:,11,online_sampling_time:,0.0377508,pdb_generation_time:,0.624853,pdb_size:,5.23368e+17,disjoint:,0,raised:,5673,disjoint_patterns:,0,sampled_states:,20050,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20044,probe:291,threshold:849
+exceeded 20K max SS_states sampled,current size:20044,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20044
+time:582.817,valid_pattern_counter:800
+time:602.386,time to clear dominated heuristics every 100 secs
+calling clear_dominated_heuristics with 11 best heuristics and unique_samples:125926
+adding heur[9] to list of heurs
+adding heur[8] to list of heurs
+adding heur[7] to list of heurs
+adding heur[6] to list of heurs
+collection[5] is dominated,eliminating 
+collection[4] is dominated,eliminating 
+collection[3] is dominated,eliminating 
+collection[2] is dominated,eliminating 
+adding heur[1] to list of heurs
+collection[0] is dominated,eliminating 
+best_pdb_collections size:11,cleaned_best_pdb_collections:6,6,time:0.745491
+time:603.132,finished clearing dominated heuristics every 100 secs
+g_timer:614.909,running SS again, too long since last improvement:,time_since_last_improv:47.5181,min_improv_time_limit:45
+New limits, precomputation_time_ms:8000
+New limits, precomputation_step_time_ms:4000
+New limits, precomputation nodes:1600000
+increased min_improv_time_limit:67.5,time_limit:4,min_target_size:17,max_target_size:20
+time:,614.909,increasing min_improv_time_limit to,67.5,pdb_max_size:9e+20,max_target_size:20,min_target_size:17, too long since last improvement found
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20023,probe:257,threshold:849
+exceeded 20K max SS_states sampled,current size:20023,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20023
+time:,623.224,bin_packed:,1,adding1 best_heuristic,episode:,681,collection:,0,new raised_ratio:,0.320232,actual_states_ratio:,0.320232,total_nodes:5.68188e+14,pruned_states:3.47013e+14,fitness:,294.572,sampled_states:,20023,initial_value:,377,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:6,size:2.61684e+18,pdb_gen_time:1.42748,episode:,681,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,3108732,saved_time:,4.73015e+09
+termination_time:1.738e-06
+time:623.667s,last_improv_collection_size:2.61684e+18
+time:,623.667,current_episode:,681,best_heuristics count:,7,online_sampling_time:,0.0392404,pdb_generation_time:,0.442362,pdb_size:,2.61684e+18,disjoint:,1,raised:,6412,disjoint_patterns:,1,sampled_states:,20023,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20005,probe:264,threshold:849
+exceeded 20K max SS_states sampled,current size:20005,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20005
+time:629.482,valid_pattern_counter:900
+time:680.309,valid_pattern_counter:1000
+time:,692.723,bin_packed:,1,adding1 best_heuristic,episode:,795,collection:,0,new raised_ratio:,0.000899775,actual_states_ratio:,0.000899775,total_nodes:4.82367e+16,pruned_states:2.05838e+16,fitness:,222.889,sampled_states:,20005,initial_value:,444,skip_sampling:,0,best_heur_dead_ends:,0,best_heuristics count:7,size:1.04674e+18,pdb_gen_time:1.75797,episode:,795,finished:,1,bin_packed:,1,bin_reg_packed:,1,bin_rel_packed:,0,Peak memory:,3164428,saved_time:,2.80659e+11
+termination_time:2.225e-06
+time:693.262s,last_improv_collection_size:1.04674e+18
+time:,693.262,current_episode:,795,best_heuristics count:,8,online_sampling_time:,0.0371831,pdb_generation_time:,0.538368,pdb_size:,1.04674e+18,disjoint:,1,raised:,18,disjoint_patterns:,1,sampled_states:,20005,min_improv_ratio:,0
+initial threshold:849
+exceeded 20K max SS_states sampled,current size:20056,probe:290,threshold:849
+exceeded 20K max SS_states sampled,current size:20056,threshold:849
+use_lmcut:0,lmcut_TPN:0,SS_iter_map_size:20056
+time:700.74,time to clear dominated heuristics every 100 secs
+calling clear_dominated_heuristics with 8 best heuristics and unique_samples:135655
+adding heur[6] to list of heurs
+adding heur[5] to list of heurs
+adding heur[4] to list of heurs
+adding heur[3] to list of heurs
+collection[2] is dominated,eliminating 
+adding heur[1] to list of heurs
+adding heur[0] to list of heurs
+best_pdb_collections size:8,cleaned_best_pdb_collections:7,7,time:0.675731
+time:701.416,finished clearing dominated heuristics every 100 secs
+Peak memory: 3172532 KB
+caught signal 2 -- exiting

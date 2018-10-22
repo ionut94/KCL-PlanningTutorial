@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/planner/fast-downward.py", line 6, in <module>
+    main()
+  File "/planner/driver/main.py", line 34, in main
+    run_components.run_translate(args)
+  File "/planner/driver/run_components.py", line 98, in run_translate
+    time_limit=time_limit, memory_limit=memory_limit)
+  File "/planner/driver/run_components.py", line 83, in call_component
+    stdin=stdin, time_limit=time_limit, memory_limit=memory_limit)
+  File "/planner/driver/call.py", line 30, in check_call
+    return subprocess.check_call(cmd, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 536, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 523, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/lib/python2.7/subprocess.py", line 1392, in wait
+    pid, sts = _eintr_retry_call(os.waitpid, self.pid, 0)
+  File "/usr/lib/python2.7/subprocess.py", line 476, in _eintr_retry_call
+    return func(*args)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/planner/builds/release64/bin/translate/translate.py", line 683, in <module>
+    main()
+  File "/planner/builds/release64/bin/translate/translate.py", line 673, in main
+    sas_task = pddl_to_sas(task)
+  File "/planner/builds/release64/bin/translate/translate.py", line 517, in pddl_to_sas
+    reachable_action_params) = instantiate.explore(task)
+  File "/planner/builds/release64/bin/translate/instantiate.py", line 75, in explore
+    prog = pddl_to_prolog.translate(task)
+  File "/planner/builds/release64/bin/translate/pddl_to_prolog.py", line 171, in translate
+    prog.split_rules()
+  File "/planner/builds/release64/bin/translate/pddl_to_prolog.py", line 40, in split_rules
+    import split_rules
+  File "/planner/builds/release64/bin/translate/split_rules.py", line 5, in <module>
+    from pddl_to_prolog import Rule, get_variables
+KeyboardInterrupt

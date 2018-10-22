@@ -1,0 +1,104 @@
+INFO     Running translator.
+INFO     translator input: ['domain.pddl', 'problem.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: 1799.9s
+INFO     translator memory limit: 8192 MB
+INFO     callstring: /usr/bin/python /planner/builds/release64/bin/translate/translate.py domain.pddl problem.pddl
+time limit 1799.90 -> (1800, 1801)
+Parsing...
+Parsing: [0.000s CPU, 0.007s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.020s CPU, 0.005s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 129 rules.
+Computing model... [0.070s CPU, 0.072s wall-clock]
+3345 relevant atoms
+4080 auxiliary atoms
+7425 final queue length
+21467 total queue pushes
+Completing instantiation... [0.180s CPU, 0.191s wall-clock]
+Instantiating: [0.280s CPU, 0.274s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.010s CPU, 0.013s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+162 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.010s CPU, 0.017s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.020s CPU, 0.016s wall-clock]
+Translating task: [0.260s CPU, 0.259s wall-clock]
+4207 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+19 propositions removed
+Detecting unreachable propositions: [0.120s CPU, 0.115s wall-clock]
+Translator variables: 172
+Translator derived variables: 0
+Translator facts: 458
+Translator goal facts: 17
+Translator mutex groups: 30
+Translator total mutex groups size: 282
+Translator operators: 2734
+Translator axioms: 0
+Translator task size: 42497
+Translator peak memory: 61432 KB
+Writing output... [0.030s CPU, 0.035s wall-clock]
+Done! [0.710s CPU, 0.717s wall-clock]
+INFO     Running preprocessor (release64).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: 1799.14s
+INFO     preprocessor memory limit: 8192 MB
+INFO     callstring: /planner/builds/release64/bin/preprocess < output.sas
+time limit 1799.14 -> (1800, 1801)
+Building causal graph...
+The causal graph is not acyclic.
+170 variables of 172 necessary
+17 of 30 mutex groups necessary.
+2734 of 2734 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 454 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=28900, notReached=173956, spurious=3260
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=184406, notReached=18450, spurious=3260
+411 operators are spurious because were not triggered
+Unreachable proposition: Atom on(card-d0-s0-v2, card-d0-s0-v2)
+Unreachable proposition: Atom on(card-d0-s1-v0, card-d0-s0-v2)
+Unreachable proposition: Atom on(card-d0-s1-v0, card-d0-s1-v0)
+Unreachable proposition: Atom on(card-d0-s1-v0, card-d0-s3-v0)
+Unreachable proposition: Atom on(card-d0-s0-v0, card-d0-s0-v2)
+Unreachable proposition: Atom on(card-d0-s0-v0, card-d0-s3-v0)
+Unreachable proposition: Atom on(card-d0-s3-v0, card-d0-s3-v0)
+Unreachable proposition: Atom on(card-d0-s3-v1, card-d0-s1-v1)
+Unreachable proposition: Atom on(card-d0-s3-v1, card-d0-s3-v0)
+Unreachable proposition: Atom on(card-d0-s3-v1, card-d0-s3-v1)
+H^2 mutexes added fw: 9882, unreachable: 10
+0 of 2323 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=37105, notReached=147301, spurious=21710
+Initialize m_ops bw
+Computing mutexes...

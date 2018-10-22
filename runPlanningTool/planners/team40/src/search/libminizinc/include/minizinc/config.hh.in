@@ -1,0 +1,25 @@
+#define MZN_VERSION_MAJOR "${libminizinc_VERSION_MAJOR}"
+
+#define MZN_VERSION_MINOR "${libminizinc_VERSION_MINOR}"
+
+#define MZN_VERSION_PATCH "${libminizinc_VERSION_PATCH}"
+
+#cmakedefine HAS_DECLSPEC_THREAD
+
+#cmakedefine HAS_ATTR_THREAD
+
+#cmakedefine MZN_NEED_TR1
+
+#cmakedefine HAS_PIDPATH
+
+#cmakedefine HAS_GETMODULEFILENAME
+
+#cmakedefine HAS_GETFILEATTRIBUTES
+
+#cmakedefine HAS_MEMCPY_S
+
+#cmakedefine HAS_DLFCN_H
+
+#cmakedefine HAS_WINDOWS_H
+
+#cmakedefine HAS_GUROBI_PLUGIN

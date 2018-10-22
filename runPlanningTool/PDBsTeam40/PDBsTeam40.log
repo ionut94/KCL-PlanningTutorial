@@ -1,0 +1,1521 @@
+Using container recipe deffile: /input/Singularity
+Sanitizing environment
+[0mAdding base Singularity environment to container
+Docker image path: index.docker.io/library/ubuntu:xenial
+Cache folder set to /root/.singularity/docker
+[1/4] ||----------------------------------|   0.0% [1/4] |========|--------------------------|  25.0% [2/4] |=================|-----------------|  50.0% [3/4] |==========================|--------|  75.0% [4/4] |===================================| 100.0% 
+Exploding layer: sha256:18d680d616571900d78ee1c8fff0310f2a2afe39c6ed0ba2651ff667af406c3e.tar.gz
+Exploding layer: sha256:0addb6fece630456e0ab187b0aa4304d0851ba60576e7f6f9042a97ee908a796.tar.gz
+Exploding layer: sha256:78e58219b215b359fe002f0ca1f416617b75ca9b36cb274c98d7a5f808711179.tar.gz
+Exploding layer: sha256:eb6959a66df2ea26a26452ba11f84fb64bb45af90204374862ec71ee59f795e7.tar.gz
+Exploding layer: sha256:f6be9f4f6905406c1e7fd6031ee3104d25ad6a31d10d5e9192e7abf7a21e519a.tar.gz
+User defined %runscript found! Taking priority.
+Running post scriptlet
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [107 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+Get:6 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [727 kB]
+Get:7 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [497 kB]
+Get:8 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [3747 B]
+Get:9 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1115 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [896 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [18.8 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7965 B]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8532 B]
+Fetched 13.6 MB in 3s (4208 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf binutils ca-certificates cmake-data cpp cpp-5 file g++-5
+  g++-5-multilib gcc gcc-5 gcc-5-multilib gcc-multilib ifupdown iproute2
+  isc-dhcp-client isc-dhcp-common javascript-common krb5-locales lib32asan2
+  lib32atomic1 lib32cilkrts5 lib32gcc-5-dev lib32gcc1 lib32gomp1 lib32itm1
+  lib32mpx0 lib32quadmath0 lib32stdc++-5-dev lib32stdc++6 lib32ubsan0
+  libarchive13 libasan2 libasn1-8-heimdal libatm1 libatomic1 libbsd0
+  libc-dev-bin libc6-dev libc6-dev-i386 libc6-dev-x32 libc6-i386 libc6-x32
+  libcc1-0 libcilkrts5 libcurl3 libdns-export162 libedit2 libexpat1 libffi6
+  libgcc-5-dev libgdbm3 libgmp10 libgnutls30 libgomp1 libgssapi-krb5-2
+  libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhogweed4 libhx509-5-heimdal libicu55 libidn11
+  libisc-export160 libisl15 libitm1 libjs-excanvas libjsoncpp1 libk5crypto3
+  libkeyutils1 libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2
+  liblsan0 liblzo2-2 libmagic1 libmnl0 libmpc3 libmpfr4 libmpx0 libnettle6
+  libp11-kit0 libperl5.22 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libquadmath0 libroken18-heimdal librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libsigsegv2 libsqlite3-0 libssl1.0.0
+  libstdc++-5-dev libtasn1-6 libtsan0 libubsan0 libwind0-heimdal libx11-6
+  libx11-data libx32asan2 libx32atomic1 libx32cilkrts5 libx32gcc-5-dev
+  libx32gcc1 libx32gomp1 libx32itm1 libx32quadmath0 libx32stdc++-5-dev
+  libx32stdc++6 libx32ubsan0 libxau6 libxcb1 libxdmcp6 libxext6 libxml2
+  libxmuu1 libxtables11 linux-libc-dev m4 manpages manpages-dev
+  mercurial-common mime-support netbase openssh-client openssl perl
+  perl-modules-5.22 python-minimal python2.7 python2.7-minimal rename
+  sgml-base ucf xauth xml-core
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc libtool gettext binutils-doc
+  codeblocks eclipse ninja-build cpp-doc gcc-5-locales gcc-5-doc
+  libstdc++6-5-dbg lib32stdc++6-5-dbg libx32stdc++6-5-dbg flex bison gdb
+  gcc-doc libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan2-dbg
+  liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx0-dbg
+  libquadmath0-dbg ppp rdnssd iproute2-doc resolvconf avahi-autoipd
+  isc-dhcp-client-ddns apparmor apache2 | lighttpd | httpd lrzip glibc-doc
+  gnutls-bin krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap
+  libsasl2-modules-sql libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libstdc++-5-doc make-doc man-browser qct
+  kdiff3 | kdiff3-qt | kompare | meld | tkcvs | mgdiff wish python-mysqldb
+  python-pygments python-openssl ssh-askpass libpam-ssh keychain monkeysphere
+  perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl python-doc
+  python-tk python2.7-doc binfmt-support sgml-base-doc debhelper
+The following NEW packages will be installed:
+  autoconf automake autotools-dev binutils ca-certificates cmake cmake-data
+  cpp cpp-5 file g++ g++-5 g++-5-multilib g++-multilib gcc gcc-5
+  gcc-5-multilib gcc-multilib ifupdown iproute2 isc-dhcp-client
+  isc-dhcp-common javascript-common krb5-locales lib32asan2 lib32atomic1
+  lib32cilkrts5 lib32gcc-5-dev lib32gcc1 lib32gomp1 lib32itm1 lib32mpx0
+  lib32quadmath0 lib32stdc++-5-dev lib32stdc++6 lib32ubsan0 libarchive13
+  libasan2 libasn1-8-heimdal libatm1 libatomic1 libbsd0 libc-dev-bin libc6-dev
+  libc6-dev-i386 libc6-dev-x32 libc6-i386 libc6-x32 libcc1-0 libcilkrts5
+  libcurl3 libdns-export162 libedit2 libexpat1 libffi6 libgcc-5-dev libgdbm3
+  libgmp10 libgnutls30 libgomp1 libgssapi-krb5-2 libgssapi3-heimdal
+  libhcrypto4-heimdal libheimbase1-heimdal libheimntlm0-heimdal libhogweed4
+  libhx509-5-heimdal libicu55 libidn11 libisc-export160 libisl15 libitm1
+  libjs-excanvas libjsoncpp1 libk5crypto3 libkeyutils1 libkrb5-26-heimdal
+  libkrb5-3 libkrb5support0 libldap-2.4-2 liblsan0 liblzo2-2 libmagic1 libmnl0
+  libmpc3 libmpfr4 libmpx0 libnettle6 libp11-kit0 libperl5.22 libpython-stdlib
+  libpython2.7-minimal libpython2.7-stdlib libquadmath0 libroken18-heimdal
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsigsegv2
+  libsqlite3-0 libssl1.0.0 libstdc++-5-dev libtasn1-6 libtsan0 libubsan0
+  libwind0-heimdal libx11-6 libx11-data libx32asan2 libx32atomic1
+  libx32cilkrts5 libx32gcc-5-dev libx32gcc1 libx32gomp1 libx32itm1
+  libx32quadmath0 libx32stdc++-5-dev libx32stdc++6 libx32ubsan0 libxau6
+  libxcb1 libxdmcp6 libxext6 libxml2 libxmuu1 libxtables11 linux-libc-dev m4
+  make manpages manpages-dev mercurial mercurial-common mime-support netbase
+  openssh-client openssl perl perl-modules-5.22 python python-minimal
+  python2.7 python2.7-minimal rename sgml-base ucf xauth xml-core
+0 upgraded, 149 newly installed, 0 to remove and 0 not upgraded.
+Need to get 88.2 MB of archives.
+After this operation, 381 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libatm1 amd64 1:2.5.1-1.5 [24.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmnl0 amd64 1.0.3-5 [12.0 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libgdbm3 amd64 1.8.3-13.1 [16.9 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxau6 amd64 1:1.0.8-1 [8376 B]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxdmcp6 amd64 1:1.1.2-1.1 [11.0 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxcb1 amd64 1.11.1-1ubuntu1 [40.0 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx11-data all 2:1.6.3-1ubuntu2.1 [113 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx11-6 amd64 2:1.6.3-1ubuntu2.1 [570 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxext6 amd64 2:1.3.3-1 [29.4 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 sgml-base all 1.26+nmu4ubuntu1 [12.5 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cmake-data all 3.5.1-1ubuntu3 [1121 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblzo2-2 amd64 2.08-1.2 [48.7 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnettle6 amd64 3.2-1ubuntu0.16.04.1 [93.5 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libicu55 amd64 55.1-7ubuntu0.4 [7646 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libxml2 amd64 2.9.3+dfsg1-1ubuntu0.6 [697 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libarchive13 amd64 3.1.2-11ubuntu0.16.04.4 [262 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5support0 amd64 1.13.2+dfsg-5ubuntu2 [30.8 kB]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libk5crypto3 amd64 1.13.2+dfsg-5ubuntu2 [81.2 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 libkeyutils1 amd64 1.5.9-8ubuntu1 [9904 B]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-3 amd64 1.13.2+dfsg-5ubuntu2 [273 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi-krb5-2 amd64 1.13.2+dfsg-5ubuntu2 [120 kB]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libidn11 amd64 1.32-3ubuntu1.2 [46.5 kB]
+Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 libgmp10 amd64 2:6.1.0+dfsg-2 [240 kB]
+Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhogweed4 amd64 3.2-1ubuntu0.16.04.1 [136 kB]
+Get:25 http://archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
+Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libp11-kit0 amd64 0.23.2-5~ubuntu16.04.1 [105 kB]
+Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtasn1-6 amd64 4.7-3ubuntu0.16.04.3 [43.5 kB]
+Get:28 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgnutls30 amd64 3.4.10-4ubuntu1.4 [548 kB]
+Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libroken18-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [41.4 kB]
+Get:30 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasn1-8-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [174 kB]
+Get:31 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhcrypto4-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [85.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimbase1-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [29.3 kB]
+Get:33 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libwind0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [47.8 kB]
+Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhx509-5-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [107 kB]
+Get:35 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1 [396 kB]
+Get:36 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-26-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [202 kB]
+Get:37 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimntlm0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [15.1 kB]
+Get:38 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi3-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [96.1 kB]
+Get:39 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules-db amd64 2.1.26.dfsg1-14build1 [14.5 kB]
+Get:40 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-2 amd64 2.1.26.dfsg1-14build1 [48.7 kB]
+Get:41 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3.3 [161 kB]
+Get:42 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d-1ubuntu0.1 [54.4 kB]
+Get:43 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4.13 [1083 kB]
+Get:44 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcurl3 amd64 7.47.0-1ubuntu2.9 [186 kB]
+Get:45 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1 amd64 2.1.0-7ubuntu0.16.04.3 [71.2 kB]
+Get:46 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjsoncpp1 amd64 1.7.2-1 [73.0 kB]
+Get:47 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cmake amd64 3.5.1-1ubuntu3 [2623 kB]
+Get:48 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsigsegv2 amd64 2.10-4 [14.1 kB]
+Get:49 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 perl-modules-5.22 all 5.22.1-9ubuntu0.5 [2645 kB]
+Get:50 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libperl5.22 amd64 5.22.1-9ubuntu0.5 [3396 kB]
+Get:51 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 perl amd64 5.22.1-9ubuntu0.5 [238 kB]
+Get:52 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubuntu0~16.04.3 [340 kB]
+Get:53 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~16.04.3 [1261 kB]
+Get:54 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-minimal amd64 2.7.12-1~16.04 [28.1 kB]
+Get:55 http://archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]
+Get:56 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu0~16.04.3 [1880 kB]
+Get:57 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.3 [224 kB]
+Get:58 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-stdlib amd64 2.7.12-1~16.04 [7768 B]
+Get:59 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python amd64 2.7.12-1~16.04 [137 kB]
+Get:60 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpfr4 amd64 3.1.4-1 [191 kB]
+Get:61 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:62 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmagic1 amd64 1:5.25-2ubuntu1.1 [216 kB]
+Get:63 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 file amd64 1:5.25-2ubuntu1.1 [21.2 kB]
+Get:64 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 iproute2 amd64 4.3.0-1ubuntu3.16.04.3 [522 kB]
+Get:65 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 ifupdown amd64 0.8.10ubuntu1.4 [54.9 kB]
+Get:66 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libisc-export160 amd64 1:9.10.3.dfsg.P4-8ubuntu1.11 [153 kB]
+Get:67 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libdns-export162 amd64 1:9.10.3.dfsg.P4-8ubuntu1.11 [667 kB]
+Get:68 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 isc-dhcp-client amd64 4.3.3-5ubuntu12.10 [224 kB]
+Get:69 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 isc-dhcp-common amd64 4.3.3-5ubuntu12.10 [105 kB]
+Get:70 http://archive.ubuntu.com/ubuntu xenial/main amd64 libbsd0 amd64 0.8.2-1 [41.7 kB]
+Get:71 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxtables11 amd64 1.6.0-2ubuntu3 [27.2 kB]
+Get:72 http://archive.ubuntu.com/ubuntu xenial/main amd64 netbase all 5.3 [12.9 kB]
+Get:73 http://archive.ubuntu.com/ubuntu xenial/main amd64 ucf all 3.0036 [52.9 kB]
+Get:74 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssl amd64 1.0.2g-1ubuntu4.13 [492 kB]
+Get:75 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 ca-certificates all 20170717~16.04.1 [168 kB]
+Get:76 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 krb5-locales all 1.13.2+dfsg-5ubuntu2 [13.2 kB]
+Get:77 http://archive.ubuntu.com/ubuntu xenial/main amd64 libedit2 amd64 3.1-20150325-1ubuntu2 [76.5 kB]
+Get:78 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules amd64 2.1.26.dfsg1-14build1 [47.5 kB]
+Get:79 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxmuu1 amd64 2:1.1.2-2 [9674 B]
+Get:80 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages all 4.04-2 [1087 kB]
+Get:81 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-client amd64 1:7.2p2-4ubuntu2.5 [588 kB]
+Get:82 http://archive.ubuntu.com/ubuntu xenial/main amd64 xauth amd64 1:1.0.9-1ubuntu2 [22.7 kB]
+Get:83 http://archive.ubuntu.com/ubuntu xenial/main amd64 xml-core all 0.13+nmu2 [23.3 kB]
+Get:84 http://archive.ubuntu.com/ubuntu xenial/main amd64 m4 amd64 1.4.17-5 [195 kB]
+Get:85 http://archive.ubuntu.com/ubuntu xenial/main amd64 autoconf all 2.69-9 [321 kB]
+Get:86 http://archive.ubuntu.com/ubuntu xenial/main amd64 autotools-dev all 20150820.1 [39.8 kB]
+Get:87 http://archive.ubuntu.com/ubuntu xenial/main amd64 automake all 1:1.15-4ubuntu1 [510 kB]
+Get:88 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.7 [2309 kB]
+Get:89 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:90 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:91 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:92 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:93 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:94 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:95 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:96 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:97 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:98 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:99 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:100 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:101 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:102 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:103 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:104 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:105 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:106 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Get:107 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-137.163 [850 kB]
+Get:108 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:109 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libstdc++-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [1426 kB]
+Get:110 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 g++-5 amd64 5.4.0-6ubuntu1~16.04.10 [8319 kB]
+Get:111 http://archive.ubuntu.com/ubuntu xenial/main amd64 g++ amd64 4:5.3.1-1ubuntu1 [1504 B]
+Get:112 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-i386 amd64 2.23-0ubuntu10 [2336 kB]
+Get:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev-i386 amd64 2.23-0ubuntu10 [1262 kB]
+Get:114 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-x32 amd64 2.23-0ubuntu10 [2559 kB]
+Get:115 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev-x32 amd64 2.23-0ubuntu10 [1559 kB]
+Get:116 http://archive.ubuntu.com/ubuntu xenial/main amd64 lib32gcc1 amd64 1:6.0.1-0ubuntu1 [46.6 kB]
+Get:117 http://archive.ubuntu.com/ubuntu xenial/main amd64 libx32gcc1 amd64 1:6.0.1-0ubuntu1 [38.7 kB]
+Get:118 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32gomp1 amd64 5.4.0-6ubuntu1~16.04.10 [59.7 kB]
+Get:119 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32gomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.4 kB]
+Get:120 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32itm1 amd64 5.4.0-6ubuntu1~16.04.10 [29.6 kB]
+Get:121 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32itm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.7 kB]
+Get:122 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32atomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8640 B]
+Get:123 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32atomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8904 B]
+Get:124 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32asan2 amd64 5.4.0-6ubuntu1~16.04.10 [260 kB]
+Get:125 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32asan2 amd64 5.4.0-6ubuntu1~16.04.10 [253 kB]
+Get:126 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32stdc++6 amd64 5.4.0-6ubuntu1~16.04.10 [404 kB]
+Get:127 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32ubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:128 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32stdc++6 amd64 5.4.0-6ubuntu1~16.04.10 [384 kB]
+Get:129 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32ubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [97.0 kB]
+Get:130 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32cilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [44.8 kB]
+Get:131 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32cilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.8 kB]
+Get:132 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32mpx0 amd64 5.4.0-6ubuntu1~16.04.10 [11.1 kB]
+Get:133 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32quadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [203 kB]
+Get:134 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32quadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [134 kB]
+Get:135 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32gcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2050 kB]
+Get:136 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32gcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [1867 kB]
+Get:137 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5-multilib amd64 5.4.0-6ubuntu1~16.04.10 [968 B]
+Get:138 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lib32stdc++-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [637 kB]
+Get:139 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libx32stdc++-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [609 kB]
+Get:140 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 g++-5-multilib amd64 5.4.0-6ubuntu1~16.04.10 [992 B]
+Get:141 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc-multilib amd64 4:5.3.1-1ubuntu1 [1212 B]
+Get:142 http://archive.ubuntu.com/ubuntu xenial/main amd64 g++-multilib amd64 4:5.3.1-1ubuntu1 [940 B]
+Get:143 http://archive.ubuntu.com/ubuntu xenial/main amd64 javascript-common all 11 [6066 B]
+Get:144 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libjs-excanvas all 0.r3-4 [45.2 kB]
+Get:145 http://archive.ubuntu.com/ubuntu xenial/main amd64 make amd64 4.1-6 [151 kB]
+Get:146 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Get:147 http://archive.ubuntu.com/ubuntu xenial/universe amd64 mercurial-common all 3.7.3-1ubuntu1 [1833 kB]
+Get:148 http://archive.ubuntu.com/ubuntu xenial/universe amd64 mercurial amd64 3.7.3-1ubuntu1 [46.3 kB]
+Get:149 http://archive.ubuntu.com/ubuntu xenial/main amd64 rename all 0.20-4 [12.0 kB]
+Fetched 88.2 MB in 1min 16s (1155 kB/s)
+Selecting previously unselected package libatm1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4768 files and directories currently installed.)
+Preparing to unpack .../libatm1_1%3a2.5.1-1.5_amd64.deb ...
+Unpacking libatm1:amd64 (1:2.5.1-1.5) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../libmnl0_1.0.3-5_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.3-5) ...
+Selecting previously unselected package libgdbm3:amd64.
+Preparing to unpack .../libgdbm3_1.8.3-13.1_amd64.deb ...
+Unpacking libgdbm3:amd64 (1.8.3-13.1) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../libxdmcp6_1%3a1.1.2-1.1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.2-1.1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../libxcb1_1.11.1-1ubuntu1_amd64.deb ...
+Unpacking libxcb1:amd64 (1.11.1-1ubuntu1) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../libx11-data_2%3a1.6.3-1ubuntu2.1_all.deb ...
+Unpacking libx11-data (2:1.6.3-1ubuntu2.1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../libx11-6_2%3a1.6.3-1ubuntu2.1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.3-1ubuntu2.1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../libxext6_2%3a1.3.3-1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.3-1) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../sgml-base_1.26+nmu4ubuntu1_all.deb ...
+Unpacking sgml-base (1.26+nmu4ubuntu1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_3.5.1-1ubuntu3_all.deb ...
+Unpacking cmake-data (3.5.1-1ubuntu3) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../liblzo2-2_2.08-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.08-1.2) ...
+Selecting previously unselected package libnettle6:amd64.
+Preparing to unpack .../libnettle6_3.2-1ubuntu0.16.04.1_amd64.deb ...
+Unpacking libnettle6:amd64 (3.2-1ubuntu0.16.04.1) ...
+Selecting previously unselected package libicu55:amd64.
+Preparing to unpack .../libicu55_55.1-7ubuntu0.4_amd64.deb ...
+Unpacking libicu55:amd64 (55.1-7ubuntu0.4) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.3+dfsg1-1ubuntu0.6_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.3+dfsg1-1ubuntu0.6) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-11ubuntu0.16.04.4_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-11ubuntu0.16.04.4) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.9-8ubuntu1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.9-8ubuntu1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.32-3ubuntu1.2_amd64.deb ...
+Unpacking libidn11:amd64 (1.32-3ubuntu1.2) ...
+Selecting previously unselected package libgmp10:amd64.
+Preparing to unpack .../libgmp10_2%3a6.1.0+dfsg-2_amd64.deb ...
+Unpacking libgmp10:amd64 (2:6.1.0+dfsg-2) ...
+Selecting previously unselected package libhogweed4:amd64.
+Preparing to unpack .../libhogweed4_3.2-1ubuntu0.16.04.1_amd64.deb ...
+Unpacking libhogweed4:amd64 (3.2-1ubuntu0.16.04.1) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
+Unpacking libffi6:amd64 (3.2.1-4) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.23.2-5~ubuntu16.04.1_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_4.7-3ubuntu0.16.04.3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.7-3ubuntu0.16.04.3) ...
+Selecting previously unselected package libgnutls30:amd64.
+Preparing to unpack .../libgnutls30_3.4.10-4ubuntu1.4_amd64.deb ...
+Unpacking libgnutls30:amd64 (3.4.10-4ubuntu1.4) ...
+Selecting previously unselected package libroken18-heimdal:amd64.
+Preparing to unpack .../libroken18-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../libasn1-8-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../libhcrypto4-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../libheimbase1-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../libwind0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../libhx509-5-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../libkrb5-26-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../libheimntlm0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../libgssapi3-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-14build1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-14build1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.42+dfsg-2ubuntu3.3_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.3) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20151223.gitfa8646d-1ubuntu0.1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.13_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.13) ...
+Selecting previously unselected package libcurl3:amd64.
+Preparing to unpack .../libcurl3_7.47.0-1ubuntu2.9_amd64.deb ...
+Unpacking libcurl3:amd64 (7.47.0-1ubuntu2.9) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.16.04.3_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Selecting previously unselected package libjsoncpp1:amd64.
+Preparing to unpack .../libjsoncpp1_1.7.2-1_amd64.deb ...
+Unpacking libjsoncpp1:amd64 (1.7.2-1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.5.1-1ubuntu3_amd64.deb ...
+Unpacking cmake (3.5.1-1ubuntu3) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-4_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-4) ...
+Selecting previously unselected package perl-modules-5.22.
+Preparing to unpack .../perl-modules-5.22_5.22.1-9ubuntu0.5_all.deb ...
+Unpacking perl-modules-5.22 (5.22.1-9ubuntu0.5) ...
+Selecting previously unselected package libperl5.22:amd64.
+Preparing to unpack .../libperl5.22_5.22.1-9ubuntu0.5_amd64.deb ...
+Unpacking libperl5.22:amd64 (5.22.1-9ubuntu0.5) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../perl_5.22.1-9ubuntu0.5_amd64.deb ...
+Unpacking perl (5.22.1-9ubuntu0.5) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...
+Unpacking mime-support (3.59ubuntu1) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking python2.7 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package python.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9977 files and directories currently installed.)
+Preparing to unpack .../python_2.7.12-1~16.04_amd64.deb ...
+Unpacking python (2.7.12-1~16.04) ...
+Selecting previously unselected package libmpfr4:amd64.
+Preparing to unpack .../libmpfr4_3.1.4-1_amd64.deb ...
+Unpacking libmpfr4:amd64 (3.1.4-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.25-2ubuntu1.1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.25-2ubuntu1.1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.25-2ubuntu1.1_amd64.deb ...
+Unpacking file (1:5.25-2ubuntu1.1) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../iproute2_4.3.0-1ubuntu3.16.04.3_amd64.deb ...
+Unpacking iproute2 (4.3.0-1ubuntu3.16.04.3) ...
+Selecting previously unselected package ifupdown.
+Preparing to unpack .../ifupdown_0.8.10ubuntu1.4_amd64.deb ...
+Unpacking ifupdown (0.8.10ubuntu1.4) ...
+Selecting previously unselected package libisc-export160.
+Preparing to unpack .../libisc-export160_1%3a9.10.3.dfsg.P4-8ubuntu1.11_amd64.deb ...
+Unpacking libisc-export160 (1:9.10.3.dfsg.P4-8ubuntu1.11) ...
+Selecting previously unselected package libdns-export162.
+Preparing to unpack .../libdns-export162_1%3a9.10.3.dfsg.P4-8ubuntu1.11_amd64.deb ...
+Unpacking libdns-export162 (1:9.10.3.dfsg.P4-8ubuntu1.11) ...
+Selecting previously unselected package isc-dhcp-client.
+Preparing to unpack .../isc-dhcp-client_4.3.3-5ubuntu12.10_amd64.deb ...
+Unpacking isc-dhcp-client (4.3.3-5ubuntu12.10) ...
+Selecting previously unselected package isc-dhcp-common.
+Preparing to unpack .../isc-dhcp-common_4.3.3-5ubuntu12.10_amd64.deb ...
+Unpacking isc-dhcp-common (4.3.3-5ubuntu12.10) ...
+Selecting previously unselected package libbsd0:amd64.
+Preparing to unpack .../libbsd0_0.8.2-1_amd64.deb ...
+Unpacking libbsd0:amd64 (0.8.2-1) ...
+Selecting previously unselected package libxtables11:amd64.
+Preparing to unpack .../libxtables11_1.6.0-2ubuntu3_amd64.deb ...
+Unpacking libxtables11:amd64 (1.6.0-2ubuntu3) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../archives/netbase_5.3_all.deb ...
+Unpacking netbase (5.3) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../archives/ucf_3.0036_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0036) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../openssl_1.0.2g-1ubuntu4.13_amd64.deb ...
+Unpacking openssl (1.0.2g-1ubuntu4.13) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../ca-certificates_20170717~16.04.1_all.deb ...
+Unpacking ca-certificates (20170717~16.04.1) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../krb5-locales_1.13.2+dfsg-5ubuntu2_all.deb ...
+Unpacking krb5-locales (1.13.2+dfsg-5ubuntu2) ...
+Selecting previously unselected package libedit2:amd64.
+Preparing to unpack .../libedit2_3.1-20150325-1ubuntu2_amd64.deb ...
+Unpacking libedit2:amd64 (3.1-20150325-1ubuntu2) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../libsasl2-modules_2.1.26.dfsg1-14build1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.26.dfsg1-14build1) ...
+Selecting previously unselected package libxmuu1:amd64.
+Preparing to unpack .../libxmuu1_2%3a1.1.2-2_amd64.deb ...
+Unpacking libxmuu1:amd64 (2:1.1.2-2) ...
+Selecting previously unselected package manpages.
+Preparing to unpack .../manpages_4.04-2_all.deb ...
+Unpacking manpages (4.04-2) ...
+Selecting previously unselected package openssh-client.
+Preparing to unpack .../openssh-client_1%3a7.2p2-4ubuntu2.5_amd64.deb ...
+Unpacking openssh-client (1:7.2p2-4ubuntu2.5) ...
+Selecting previously unselected package xauth.
+Preparing to unpack .../xauth_1%3a1.0.9-1ubuntu2_amd64.deb ...
+Unpacking xauth (1:1.0.9-1ubuntu2) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../xml-core_0.13+nmu2_all.deb ...
+Unpacking xml-core (0.13+nmu2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-5_amd64.deb ...
+Unpacking m4 (1.4.17-5) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-9_all.deb ...
+Unpacking autoconf (2.69-9) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20150820.1_all.deb ...
+Unpacking autotools-dev (20150820.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.15-4ubuntu1_all.deb ...
+Unpacking automake (1:1.15-4ubuntu1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.16.1-1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc-dev-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_4.4.0-137.163_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-137.163) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.23-0ubuntu10) ...
+Selecting previously unselected package libstdc++-5-dev:amd64.
+Preparing to unpack .../libstdc++-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libstdc++-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package g++-5.
+Preparing to unpack .../g++-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking g++-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../g++_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libc6-i386.
+Preparing to unpack .../libc6-i386_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-i386 (2.23-0ubuntu10) ...
+Selecting previously unselected package libc6-dev-i386.
+Preparing to unpack .../libc6-dev-i386_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev-i386 (2.23-0ubuntu10) ...
+Selecting previously unselected package libc6-x32.
+Preparing to unpack .../libc6-x32_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-x32 (2.23-0ubuntu10) ...
+Selecting previously unselected package libc6-dev-x32.
+Preparing to unpack .../libc6-dev-x32_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev-x32 (2.23-0ubuntu10) ...
+Selecting previously unselected package lib32gcc1.
+Preparing to unpack .../lib32gcc1_1%3a6.0.1-0ubuntu1_amd64.deb ...
+Unpacking lib32gcc1 (1:6.0.1-0ubuntu1) ...
+Selecting previously unselected package libx32gcc1.
+Preparing to unpack .../libx32gcc1_1%3a6.0.1-0ubuntu1_amd64.deb ...
+Unpacking libx32gcc1 (1:6.0.1-0ubuntu1) ...
+Selecting previously unselected package lib32gomp1.
+Preparing to unpack .../lib32gomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32gomp1 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32gomp1.
+Preparing to unpack .../libx32gomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32gomp1 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32itm1.
+Preparing to unpack .../lib32itm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32itm1 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32itm1.
+Preparing to unpack .../libx32itm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32itm1 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32atomic1.
+Preparing to unpack .../lib32atomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32atomic1 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32atomic1.
+Preparing to unpack .../libx32atomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32atomic1 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32asan2.
+Preparing to unpack .../lib32asan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32asan2 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32asan2.
+Preparing to unpack .../libx32asan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32asan2 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32stdc++6.
+Preparing to unpack .../lib32stdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32stdc++6 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32ubsan0.
+Preparing to unpack .../lib32ubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32ubsan0 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32stdc++6.
+Preparing to unpack .../libx32stdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32stdc++6 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32ubsan0.
+Preparing to unpack .../libx32ubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32ubsan0 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32cilkrts5.
+Preparing to unpack .../lib32cilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32cilkrts5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32cilkrts5.
+Preparing to unpack .../libx32cilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32cilkrts5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32mpx0.
+Preparing to unpack .../lib32mpx0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32mpx0 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32quadmath0.
+Preparing to unpack .../lib32quadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32quadmath0 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32quadmath0.
+Preparing to unpack .../libx32quadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32quadmath0 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32gcc-5-dev.
+Preparing to unpack .../lib32gcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32gcc-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32gcc-5-dev.
+Preparing to unpack .../libx32gcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32gcc-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-5-multilib.
+Preparing to unpack .../gcc-5-multilib_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking gcc-5-multilib (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package lib32stdc++-5-dev.
+Preparing to unpack .../lib32stdc++-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking lib32stdc++-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libx32stdc++-5-dev.
+Preparing to unpack .../libx32stdc++-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libx32stdc++-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package g++-5-multilib.
+Preparing to unpack .../g++-5-multilib_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking g++-5-multilib (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-multilib.
+Preparing to unpack .../gcc-multilib_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc-multilib (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package g++-multilib.
+Preparing to unpack .../g++-multilib_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking g++-multilib (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../javascript-common_11_all.deb ...
+Unpacking javascript-common (11) ...
+Selecting previously unselected package libjs-excanvas.
+Preparing to unpack .../libjs-excanvas_0.r3-4_all.deb ...
+Unpacking libjs-excanvas (0.r3-4) ...
+Selecting previously unselected package make.
+Preparing to unpack .../archives/make_4.1-6_amd64.deb ...
+Unpacking make (4.1-6) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+Unpacking manpages-dev (4.04-2) ...
+Selecting previously unselected package mercurial-common.
+Preparing to unpack .../mercurial-common_3.7.3-1ubuntu1_all.deb ...
+Unpacking mercurial-common (3.7.3-1ubuntu1) ...
+Selecting previously unselected package mercurial.
+Preparing to unpack .../mercurial_3.7.3-1ubuntu1_amd64.deb ...
+Unpacking mercurial (3.7.3-1ubuntu1) ...
+Selecting previously unselected package rename.
+Preparing to unpack .../archives/rename_0.20-4_all.deb ...
+Unpacking rename (0.20-4) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.4) ...
+Setting up libatm1:amd64 (1:2.5.1-1.5) ...
+Setting up libmnl0:amd64 (1.0.3-5) ...
+Setting up libgdbm3:amd64 (1.8.3-13.1) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.2-1.1) ...
+Setting up libxcb1:amd64 (1.11.1-1ubuntu1) ...
+Setting up libx11-data (2:1.6.3-1ubuntu2.1) ...
+Setting up libx11-6:amd64 (2:1.6.3-1ubuntu2.1) ...
+Setting up libxext6:amd64 (2:1.3.3-1) ...
+Setting up sgml-base (1.26+nmu4ubuntu1) ...
+Setting up cmake-data (3.5.1-1ubuntu3) ...
+Setting up liblzo2-2:amd64 (2.08-1.2) ...
+Setting up libnettle6:amd64 (3.2-1ubuntu0.16.04.1) ...
+Setting up libicu55:amd64 (55.1-7ubuntu0.4) ...
+Setting up libxml2:amd64 (2.9.3+dfsg1-1ubuntu0.6) ...
+Setting up libarchive13:amd64 (3.1.2-11ubuntu0.16.04.4) ...
+Setting up libkrb5support0:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Setting up libk5crypto3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Setting up libkeyutils1:amd64 (1.5.9-8ubuntu1) ...
+Setting up libkrb5-3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Setting up libgssapi-krb5-2:amd64 (1.13.2+dfsg-5ubuntu2) ...
+Setting up libidn11:amd64 (1.32-3ubuntu1.2) ...
+Setting up libgmp10:amd64 (2:6.1.0+dfsg-2) ...
+Setting up libhogweed4:amd64 (3.2-1ubuntu0.16.04.1) ...
+Setting up libffi6:amd64 (3.2.1-4) ...
+Setting up libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...
+Setting up libtasn1-6:amd64 (4.7-3ubuntu0.16.04.3) ...
+Setting up libgnutls30:amd64 (3.4.10-4ubuntu1.4) ...
+Setting up libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+Setting up libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...
+Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.3) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.13) ...
+Setting up libcurl3:amd64 (7.47.0-1ubuntu2.9) ...
+Setting up libexpat1:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Setting up libjsoncpp1:amd64 (1.7.2-1) ...
+Setting up cmake (3.5.1-1ubuntu3) ...
+Setting up libsigsegv2:amd64 (2.10-4) ...
+Setting up perl-modules-5.22 (5.22.1-9ubuntu0.5) ...
+Setting up libperl5.22:amd64 (5.22.1-9ubuntu0.5) ...
+Setting up perl (5.22.1-9ubuntu0.5) ...
+update-alternatives: using /usr/bin/prename to provide /usr/bin/rename (rename) in auto mode
+Setting up mime-support (3.59ubuntu1) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python2.7 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Setting up python (2.7.12-1~16.04) ...
+Setting up libmpfr4:amd64 (3.1.4-1) ...
+Setting up libmpc3:amd64 (1.0.3-1) ...
+Setting up libmagic1:amd64 (1:5.25-2ubuntu1.1) ...
+Setting up file (1:5.25-2ubuntu1.1) ...
+Setting up iproute2 (4.3.0-1ubuntu3.16.04.3) ...
+Setting up ifupdown (0.8.10ubuntu1.4) ...
+Creating /etc/network/interfaces.
+Setting up libisc-export160 (1:9.10.3.dfsg.P4-8ubuntu1.11) ...
+Setting up libdns-export162 (1:9.10.3.dfsg.P4-8ubuntu1.11) ...
+Setting up isc-dhcp-client (4.3.3-5ubuntu12.10) ...
+Setting up isc-dhcp-common (4.3.3-5ubuntu12.10) ...
+Setting up libbsd0:amd64 (0.8.2-1) ...
+Setting up libxtables11:amd64 (1.6.0-2ubuntu3) ...
+Setting up netbase (5.3) ...
+Setting up ucf (3.0036) ...
+Setting up openssl (1.0.2g-1ubuntu4.13) ...
+Setting up ca-certificates (20170717~16.04.1) ...
+Setting up krb5-locales (1.13.2+dfsg-5ubuntu2) ...
+Setting up libedit2:amd64 (3.1-20150325-1ubuntu2) ...
+Setting up libsasl2-modules:amd64 (2.1.26.dfsg1-14build1) ...
+Setting up libxmuu1:amd64 (2:1.1.2-2) ...
+Setting up manpages (4.04-2) ...
+Setting up openssh-client (1:7.2p2-4ubuntu2.5) ...
+Setting up xauth (1:1.0.9-1ubuntu2) ...
+Setting up xml-core (0.13+nmu2) ...
+Setting up m4 (1.4.17-5) ...
+Setting up autoconf (2.69-9) ...
+Setting up autotools-dev (20150820.1) ...
+Setting up automake (1:1.15-4ubuntu1) ...
+update-alternatives: using /usr/bin/automake-1.15 to provide /usr/bin/automake (automake) in auto mode
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Setting up libisl15:amd64 (0.16.1-1) ...
+Setting up cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up cpp (4:5.3.1-1ubuntu1) ...
+Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc (4:5.3.1-1ubuntu1) ...
+Setting up libc-dev-bin (2.23-0ubuntu10) ...
+Setting up linux-libc-dev:amd64 (4.4.0-137.163) ...
+Setting up libc6-dev:amd64 (2.23-0ubuntu10) ...
+Setting up libstdc++-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up g++-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up g++ (4:5.3.1-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up libc6-i386 (2.23-0ubuntu10) ...
+Setting up libc6-dev-i386 (2.23-0ubuntu10) ...
+Setting up libc6-x32 (2.23-0ubuntu10) ...
+Setting up libc6-dev-x32 (2.23-0ubuntu10) ...
+Setting up lib32gcc1 (1:6.0.1-0ubuntu1) ...
+Setting up libx32gcc1 (1:6.0.1-0ubuntu1) ...
+Setting up lib32gomp1 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32gomp1 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32itm1 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32itm1 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32atomic1 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32atomic1 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32asan2 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32asan2 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32stdc++6 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32ubsan0 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32stdc++6 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32ubsan0 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32cilkrts5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32cilkrts5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32mpx0 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32quadmath0 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32quadmath0 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32gcc-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32gcc-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-5-multilib (5.4.0-6ubuntu1~16.04.10) ...
+Setting up lib32stdc++-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libx32stdc++-5-dev (5.4.0-6ubuntu1~16.04.10) ...
+Setting up g++-5-multilib (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-multilib (4:5.3.1-1ubuntu1) ...
+Setting up g++-multilib (4:5.3.1-1ubuntu1) ...
+Setting up javascript-common (11) ...
+Setting up libjs-excanvas (0.r3-4) ...
+Setting up make (4.1-6) ...
+Setting up manpages-dev (4.04-2) ...
+Setting up mercurial-common (3.7.3-1ubuntu1) ...
+Setting up mercurial (3.7.3-1ubuntu1) ...
+
+Creating config file /etc/mercurial/hgrc.d/hgext.rc with new version
+Setting up rename (0.20-4) ...
+update-alternatives: using /usr/bin/file-rename to provide /usr/bin/rename (rename) in auto mode
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.4) ...
+Processing triggers for ca-certificates (20170717~16.04.1) ...
+Updating certificates in /etc/ssl/certs...
+148 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Processing triggers for sgml-base (1.26+nmu4ubuntu1) ...
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/g++
+-- Check for working CXX compiler: /usr/bin/g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building for 64-bit.
+-- Performing Test CXX11_FOUND
+-- Performing Test CXX11_FOUND - Success
+-- Enabling plugin stubborn_sets because plugin stubborn_sets_simple is enabled and depends on it.
+-- Enabling plugin search_common because plugin eager_search is enabled and depends on it.
+-- Enabling plugin relaxation_heuristic because plugin additive_heuristic is enabled and depends on it.
+-- Enabling plugin domain_transition_graph because plugin context_enhanced_additive_heuristic is enabled and depends on it.
+-- Enabling plugin extra_tasks because plugin cegar is enabled and depends on it.
+-- Enabling plugin lp_solver because plugin landmarks is enabled and depends on it.
+-- Enabling plugin symbolic because plugin symbolic_pdbs is enabled and depends on it.
+-- Using plugin: options
+-- Using plugin: utils
+-- Using plugin: const_evaluator
+-- Using plugin: g_evaluator
+-- Using plugin: combining_evaluator
+-- Using plugin: max_evaluator
+-- Using plugin: pref_evaluator
+-- Using plugin: weighted_evaluator
+-- Using plugin: sum_evaluator
+-- Using plugin: null_pruning_method
+-- Using plugin: stubborn_sets
+-- Using plugin: stubborn_sets_simple
+-- Using plugin: stubbornsetsec
+-- Using plugin: search_common
+-- Using plugin: eager_search
+-- Using plugin: enforced_hill_climbing_search
+-- Using plugin: iterated_search
+-- Using plugin: lazy_search
+-- Using plugin: lp_solver
+-- Using plugin: relaxation_heuristic
+-- Using plugin: additive_heuristic
+-- Using plugin: blind_search_heuristic
+-- Using plugin: context_enhanced_additive_heuristic
+-- Using plugin: cg_heuristic
+-- Using plugin: domain_transition_graph
+-- Using plugin: ff_heuristic
+-- Using plugin: goal_count_heuristic
+-- Using plugin: hm_heuristic
+-- Using plugin: landmark_cut_heuristic
+-- Using plugin: max_heuristic
+-- Using plugin: core_tasks
+-- Using plugin: extra_tasks
+-- Using plugin: cegar
+-- Using plugin: mas_heuristic
+-- Using plugin: landmarks
+-- Using plugin: operator_counting
+-- Using plugin: pdbs
+-- Using plugin: symbolic_pdbs
+-- Using plugin: gamer_pdbs
+-- Using plugin: potentials
+-- Using plugin: ss
+-- Using plugin: symbolic
+-- Could NOT find OSI (missing:  OSI_INCLUDE_DIRS OSI_LIBRARIES) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /planner/builds/release64
+Scanning dependencies of target libcudd.a
+Scanning dependencies of target translate
+Scanning dependencies of target preprocess
+[  0%] Performing configure step for 'libcudd.a'
+[  0%] Building CXX object preprocess/CMakeFiles/preprocess.dir/domain_transition_graph.cc.o
+Copying translator module into output directory
+[  0%] Building CXX object preprocess/CMakeFiles/preprocess.dir/planner.cc.o
+[  1%] Building CXX object preprocess/CMakeFiles/preprocess.dir/causal_graph.cc.o
+[  1%] Building CXX object preprocess/CMakeFiles/preprocess.dir/axiom.cc.o
+[  1%] Built target translate
+[  2%] Building CXX object preprocess/CMakeFiles/preprocess.dir/h2_mutexes.cc.o
+[  2%] Building CXX object preprocess/CMakeFiles/preprocess.dir/helper_functions.cc.o
+[  2%] Building CXX object preprocess/CMakeFiles/preprocess.dir/max_dag.cc.o
+[  3%] Building CXX object preprocess/CMakeFiles/preprocess.dir/mutex_group.cc.o
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a BSD-compatible install... [  3%] Building CXX object preprocess/CMakeFiles/preprocess.dir/operator.cc.o
+/usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+[  4%] Building CXX object preprocess/CMakeFiles/preprocess.dir/scc.cc.o
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... [  4%] Building CXX object preprocess/CMakeFiles/preprocess.dir/state.cc.o
+yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... [  4%] Building CXX object preprocess/CMakeFiles/preprocess.dir/successor_generator.cc.o
+[  5%] Building CXX object preprocess/CMakeFiles/preprocess.dir/timer.cc.o
+@
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... [  5%] Building CXX object preprocess/CMakeFiles/preprocess.dir/variable.cc.o
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether byte ordering is bigendian... no
+checking for doxygen... no
+checking for pdflatex... no
+checking for makeindex... no
+checking for library containing pow... -lm
+checking for pthread_create in -lpthread... [  6%] Linking CXX executable ../bin/preprocess
+yes
+checking for library containing WSAStartup... no
+checking for library containing GetProcessMemoryInfo... no
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+[  6%] Built target preprocess
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking for unistd.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for working C++ thread header... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking for size_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for ptrdiff_t... yes
+checking size of int... 4
+checking size of long... 8
+checking size of void *... 8
+checking size of long double... 16
+checking whether we are building for a Win32 host... no
+checking whether enough of C++11 is supported... yes
+checking for pow... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for powl... yes
+checking for gethostname... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for sysconf... yes
+checking for +Infinity (IEEE 754 floating point)... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating dddmp/exp/test1.sh
+config.status: creating dddmp/exp/test2.sh
+config.status: creating dddmp/exp/test3.sh
+config.status: creating dddmp/exp/test4.sh
+config.status: creating dddmp/exp/test5.sh
+config.status: creating dddmp/exp/test6.sh
+config.status: creating dddmp/exp/test7.sh
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+--------------------------------------------------
+Configuration summary for cudd 3.0.0
+
+Build system   : i686-pc-linux-gnu
+Host system    : i686-pc-linux-gnu
+Prefix         : '/usr/local'
+Compilers      : 'gcc    -m64 -Wall -Wextra -g -O3'
+               : 'g++    -m64 -Wall -Wextra -std=c++0x -g -O3'
+Shared library : no
+ dddmp enabled : no
+ obj enabled   : yes
+--------------------------------------------------
+ rm -f cudd/testcudd cudd/testextra st/testst mtr/testmtr dddmp/testdddmp cplusplus/testobj cplusplus/testmulti nanotrav/nanotrav
+rm -f cudd/so_locations
+rm -f dddmp/so_locations
+[  7%] Performing build step for 'libcudd.a'
+config.status: creating config.h
+config.status: config.h is unchanged
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cstringstream.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cstringstream.Tpo -c util/cstringstream.c -o util/cudd_libcudd_la-cstringstream.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddFind.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddFind.Tpo -c cudd/cuddAddFind.c -o cudd/cudd_libcudd_la-cuddAddFind.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddIte.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddIte.Tpo -c cudd/cuddAddIte.c -o cudd/cudd_libcudd_la-cuddAddIte.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddAbs.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddAbs.Tpo -c cudd/cuddAddAbs.c -o cudd/cudd_libcudd_la-cuddAddAbs.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddApply.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddApply.Tpo -c cudd/cuddAddApply.c -o cudd/cudd_libcudd_la-cuddAddApply.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddInv.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddInv.Tpo -c cudd/cuddAddInv.c -o cudd/cudd_libcudd_la-cuddAddInv.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddNeg.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddNeg.Tpo -c cudd/cuddAddNeg.c -o cudd/cudd_libcudd_la-cuddAddNeg.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAddWalsh.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAddWalsh.Tpo -c cudd/cuddAddWalsh.c -o cudd/cudd_libcudd_la-cuddAddWalsh.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAndAbs.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAndAbs.Tpo -c cudd/cuddAndAbs.c -o cudd/cudd_libcudd_la-cuddAndAbs.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddApa.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddApa.Tpo -c cudd/cuddApa.c -o cudd/cudd_libcudd_la-cuddApa.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAnneal.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAnneal.Tpo -c cudd/cuddAnneal.c -o cudd/cudd_libcudd_la-cuddAnneal.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddApprox.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddApprox.Tpo -c cudd/cuddApprox.c -o cudd/cudd_libcudd_la-cuddApprox.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddAPI.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddAPI.Tpo -c cudd/cuddAPI.c -o cudd/cudd_libcudd_la-cuddAPI.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddBddAbs.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddBddAbs.Tpo -c cudd/cuddBddAbs.c -o cudd/cudd_libcudd_la-cuddBddAbs.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddBddCorr.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddBddCorr.Tpo -c cudd/cuddBddCorr.c -o cudd/cudd_libcudd_la-cuddBddCorr.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddBddIte.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddBddIte.Tpo -c cudd/cuddBddIte.c -o cudd/cudd_libcudd_la-cuddBddIte.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddBridge.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddBridge.Tpo -c cudd/cuddBridge.c -o cudd/cudd_libcudd_la-cuddBridge.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddCache.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddCache.Tpo -c cudd/cuddCache.c -o cudd/cudd_libcudd_la-cuddCache.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddCheck.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddCheck.Tpo -c cudd/cuddCheck.c -o cudd/cudd_libcudd_la-cuddCheck.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddClip.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddClip.Tpo -c cudd/cuddClip.c -o cudd/cudd_libcudd_la-cuddClip.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddCof.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddCof.Tpo -c cudd/cuddCof.c -o cudd/cudd_libcudd_la-cuddCof.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddDecomp.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddDecomp.Tpo -c cudd/cuddDecomp.c -o cudd/cudd_libcudd_la-cuddDecomp.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddCompose.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddCompose.Tpo -c cudd/cuddCompose.c -o cudd/cudd_libcudd_la-cuddCompose.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddEssent.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddEssent.Tpo -c cudd/cuddEssent.c -o cudd/cudd_libcudd_la-cuddEssent.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddGenetic.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddGenetic.Tpo -c cudd/cuddGenetic.c -o cudd/cudd_libcudd_la-cuddGenetic.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddExact.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddExact.Tpo -c cudd/cuddExact.c -o cudd/cudd_libcudd_la-cuddExact.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddGenCof.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddGenCof.Tpo -c cudd/cuddGenCof.c -o cudd/cudd_libcudd_la-cuddGenCof.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddExport.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddExport.Tpo -c cudd/cuddExport.c -o cudd/cudd_libcudd_la-cuddExport.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddGroup.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddGroup.Tpo -c cudd/cuddGroup.c -o cudd/cudd_libcudd_la-cuddGroup.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddHarwell.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddHarwell.Tpo -c cudd/cuddHarwell.c -o cudd/cudd_libcudd_la-cuddHarwell.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddInit.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddInit.Tpo -c cudd/cuddInit.c -o cudd/cudd_libcudd_la-cuddInit.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddInteract.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddInteract.Tpo -c cudd/cuddInteract.c -o cudd/cudd_libcudd_la-cuddInteract.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddLCache.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddLCache.Tpo -c cudd/cuddLCache.c -o cudd/cudd_libcudd_la-cuddLCache.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddLevelQ.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddLevelQ.Tpo -c cudd/cuddLevelQ.c -o cudd/cudd_libcudd_la-cuddLevelQ.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddLinear.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddLinear.Tpo -c cudd/cuddLinear.c -o cudd/cudd_libcudd_la-cuddLinear.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddLiteral.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddLiteral.Tpo -c cudd/cuddLiteral.c -o cudd/cudd_libcudd_la-cuddLiteral.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddMatMult.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddMatMult.Tpo -c cudd/cuddMatMult.c -o cudd/cudd_libcudd_la-cuddMatMult.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddPriority.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddPriority.Tpo -c cudd/cuddPriority.c -o cudd/cudd_libcudd_la-cuddPriority.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddRead.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddRead.Tpo -c cudd/cuddRead.c -o cudd/cudd_libcudd_la-cuddRead.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddRef.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddRef.Tpo -c cudd/cuddRef.c -o cudd/cudd_libcudd_la-cuddRef.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddReorder.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddReorder.Tpo -c cudd/cuddReorder.c -o cudd/cudd_libcudd_la-cuddReorder.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSat.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSat.Tpo -c cudd/cuddSat.c -o cudd/cudd_libcudd_la-cuddSat.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSign.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSign.Tpo -c cudd/cuddSign.c -o cudd/cudd_libcudd_la-cuddSign.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSolve.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSolve.Tpo -c cudd/cuddSolve.c -o cudd/cudd_libcudd_la-cuddSolve.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSplit.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSplit.Tpo -c cudd/cuddSplit.c -o cudd/cudd_libcudd_la-cuddSplit.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSubsetHB.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSubsetHB.Tpo -c cudd/cuddSubsetHB.c -o cudd/cudd_libcudd_la-cuddSubsetHB.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSubsetSP.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSubsetSP.Tpo -c cudd/cuddSubsetSP.c -o cudd/cudd_libcudd_la-cuddSubsetSP.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddSymmetry.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddSymmetry.Tpo -c cudd/cuddSymmetry.c -o cudd/cudd_libcudd_la-cuddSymmetry.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddTable.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddTable.Tpo -c cudd/cuddTable.c -o cudd/cudd_libcudd_la-cuddTable.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddUtil.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddUtil.Tpo -c cudd/cuddUtil.c -o cudd/cudd_libcudd_la-cuddUtil.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddWindow.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddWindow.Tpo -c cudd/cuddWindow.c -o cudd/cudd_libcudd_la-cuddWindow.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddCount.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddCount.Tpo -c cudd/cuddZddCount.c -o cudd/cudd_libcudd_la-cuddZddCount.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddFuncs.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddFuncs.Tpo -c cudd/cuddZddFuncs.c -o cudd/cudd_libcudd_la-cuddZddFuncs.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddGroup.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddGroup.Tpo -c cudd/cuddZddGroup.c -o cudd/cudd_libcudd_la-cuddZddGroup.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddIsop.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddIsop.Tpo -c cudd/cuddZddIsop.c -o cudd/cudd_libcudd_la-cuddZddIsop.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddLin.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddLin.Tpo -c cudd/cuddZddLin.c -o cudd/cudd_libcudd_la-cuddZddLin.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddMisc.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddMisc.Tpo -c cudd/cuddZddMisc.c -o cudd/cudd_libcudd_la-cuddZddMisc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddPort.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddPort.Tpo -c cudd/cuddZddPort.c -o cudd/cudd_libcudd_la-cuddZddPort.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddReord.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddReord.Tpo -c cudd/cuddZddReord.c -o cudd/cudd_libcudd_la-cuddZddReord.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddSetop.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddSetop.Tpo -c cudd/cuddZddSetop.c -o cudd/cudd_libcudd_la-cuddZddSetop.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddSymm.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddSymm.Tpo -c cudd/cuddZddSymm.c -o cudd/cudd_libcudd_la-cuddZddSymm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT cudd/cudd_libcudd_la-cuddZddUtil.lo -MD -MP -MF cudd/.deps/cudd_libcudd_la-cuddZddUtil.Tpo -c cudd/cuddZddUtil.c -o cudd/cudd_libcudd_la-cuddZddUtil.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cpu_stats.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cpu_stats.Tpo -c util/cpu_stats.c -o util/cudd_libcudd_la-cpu_stats.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-datalimit.lo -MD -MP -MF util/.deps/cudd_libcudd_la-datalimit.Tpo -c util/datalimit.c -o util/cudd_libcudd_la-datalimit.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-pathsearch.lo -MD -MP -MF util/.deps/cudd_libcudd_la-pathsearch.Tpo -c util/pathsearch.c -o util/cudd_libcudd_la-pathsearch.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-cpu_time.lo -MD -MP -MF util/.deps/cudd_libcudd_la-cpu_time.Tpo -c util/cpu_time.c -o util/cudd_libcudd_la-cpu_time.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-prtime.lo -MD -MP -MF util/.deps/cudd_libcudd_la-prtime.Tpo -c util/prtime.c -o util/cudd_libcudd_la-prtime.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-pipefork.lo -MD -MP -MF util/.deps/cudd_libcudd_la-pipefork.Tpo -c util/pipefork.c -o util/cudd_libcudd_la-pipefork.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-safe_mem.lo -MD -MP -MF util/.deps/cudd_libcudd_la-safe_mem.Tpo -c util/safe_mem.c -o util/cudd_libcudd_la-safe_mem.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-strsav.lo -MD -MP -MF util/.deps/cudd_libcudd_la-strsav.Tpo -c util/strsav.c -o util/cudd_libcudd_la-strsav.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-texpand.lo -MD -MP -MF util/.deps/cudd_libcudd_la-texpand.Tpo -c util/texpand.c -o util/cudd_libcudd_la-texpand.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT util/cudd_libcudd_la-ucbqsort.lo -MD -MP -MF util/.deps/cudd_libcudd_la-ucbqsort.Tpo -c util/ucbqsort.c -o util/cudd_libcudd_la-ucbqsort.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT st/cudd_libcudd_la-st.lo -MD -MP -MF st/.deps/cudd_libcudd_la-st.Tpo -c st/st.c -o st/cudd_libcudd_la-st.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT mtr/cudd_libcudd_la-mtrBasic.lo -MD -MP -MF mtr/.deps/cudd_libcudd_la-mtrBasic.Tpo -c mtr/mtrBasic.c -o mtr/cudd_libcudd_la-mtrBasic.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT epd/cudd_libcudd_la-epd.lo -MD -MP -MF epd/.deps/cudd_libcudd_la-epd.Tpo -c epd/epd.c -o epd/cudd_libcudd_la-epd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -g -O3 -MT mtr/cudd_libcudd_la-mtrGroup.lo -MD -MP -MF mtr/.deps/cudd_libcudd_la-mtrGroup.Tpo -c mtr/mtrGroup.c -o mtr/cudd_libcudd_la-mtrGroup.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./cudd -I./st -I./epd -I./mtr -I./util -m64 -Wall -Wextra -std=c++0x -g -O3 -MT cplusplus/cudd_libcudd_la-cuddObj.lo -MD -MP -MF cplusplus/.deps/cudd_libcudd_la-cuddObj.Tpo -c cplusplus/cuddObj.cc -o cplusplus/cudd_libcudd_la-cuddObj.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpBinary.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpBinary.Tpo -c dddmp/dddmpBinary.c -o dddmp/dddmp_libdddmp_la-dddmpBinary.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpConvert.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpConvert.Tpo -c dddmp/dddmpConvert.c -o dddmp/dddmp_libdddmp_la-dddmpConvert.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpDbg.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpDbg.Tpo -c dddmp/dddmpDbg.c -o dddmp/dddmp_libdddmp_la-dddmpDbg.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpLoad.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpLoad.Tpo -c dddmp/dddmpLoad.c -o dddmp/dddmp_libdddmp_la-dddmpLoad.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpLoadCnf.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpLoadCnf.Tpo -c dddmp/dddmpLoadCnf.c -o dddmp/dddmp_libdddmp_la-dddmpLoadCnf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpNodeAdd.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpNodeAdd.Tpo -c dddmp/dddmpNodeAdd.c -o dddmp/dddmp_libdddmp_la-dddmpNodeAdd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpNodeBdd.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpNodeBdd.Tpo -c dddmp/dddmpNodeBdd.c -o dddmp/dddmp_libdddmp_la-dddmpNodeBdd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpNodeCnf.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpNodeCnf.Tpo -c dddmp/dddmpNodeCnf.c -o dddmp/dddmp_libdddmp_la-dddmpNodeCnf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpStoreAdd.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpStoreAdd.Tpo -c dddmp/dddmpStoreAdd.c -o dddmp/dddmp_libdddmp_la-dddmpStoreAdd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpStoreCnf.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpStoreCnf.Tpo -c dddmp/dddmpStoreCnf.c -o dddmp/dddmp_libdddmp_la-dddmpStoreCnf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpStoreBdd.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpStoreBdd.Tpo -c dddmp/dddmpStoreBdd.c -o dddmp/dddmp_libdddmp_la-dddmpStoreBdd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpStoreMisc.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpStoreMisc.Tpo -c dddmp/dddmpStoreMisc.c -o dddmp/dddmp_libdddmp_la-dddmpStoreMisc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./util -I./mtr -I./epd -I./cudd -I./st -m64 -Wall -Wextra -g -O3 -MT dddmp/dddmp_libdddmp_la-dddmpUtil.lo -MD -MP -MF dddmp/.deps/dddmp_libdddmp_la-dddmpUtil.Tpo -c dddmp/dddmpUtil.c -o dddmp/dddmp_libdddmp_la-dddmpUtil.o
+libtool: link: ar cru dddmp/.libs/libdddmp.a  dddmp/dddmp_libdddmp_la-dddmpBinary.o dddmp/dddmp_libdddmp_la-dddmpConvert.o dddmp/dddmp_libdddmp_la-dddmpDbg.o dddmp/dddmp_libdddmp_la-dddmpLoad.o dddmp/dddmp_libdddmp_la-dddmpLoadCnf.o dddmp/dddmp_libdddmp_la-dddmpNodeAdd.o dddmp/dddmp_libdddmp_la-dddmpNodeBdd.o dddmp/dddmp_libdddmp_la-dddmpNodeCnf.o dddmp/dddmp_libdddmp_la-dddmpStoreAdd.o dddmp/dddmp_libdddmp_la-dddmpStoreBdd.o dddmp/dddmp_libdddmp_la-dddmpStoreCnf.o dddmp/dddmp_libdddmp_la-dddmpStoreMisc.o dddmp/dddmp_libdddmp_la-dddmpUtil.o
+libtool: link: ranlib dddmp/.libs/libdddmp.a
+libtool: link: ( cd "dddmp/.libs" && rm -f "libdddmp.la" && ln -s "../libdddmp.la" "libdddmp.la" )
+libtool: link: ar cru cudd/.libs/libcudd.a  cudd/cudd_libcudd_la-cuddAddAbs.o cudd/cudd_libcudd_la-cuddAddApply.o cudd/cudd_libcudd_la-cuddAddFind.o cudd/cudd_libcudd_la-cuddAddInv.o cudd/cudd_libcudd_la-cuddAddIte.o cudd/cudd_libcudd_la-cuddAddNeg.o cudd/cudd_libcudd_la-cuddAddWalsh.o cudd/cudd_libcudd_la-cuddAndAbs.o cudd/cudd_libcudd_la-cuddAnneal.o cudd/cudd_libcudd_la-cuddApa.o cudd/cudd_libcudd_la-cuddAPI.o cudd/cudd_libcudd_la-cuddApprox.o cudd/cudd_libcudd_la-cuddBddAbs.o cudd/cudd_libcudd_la-cuddBddCorr.o cudd/cudd_libcudd_la-cuddBddIte.o cudd/cudd_libcudd_la-cuddBridge.o cudd/cudd_libcudd_la-cuddCache.o cudd/cudd_libcudd_la-cuddCheck.o cudd/cudd_libcudd_la-cuddClip.o cudd/cudd_libcudd_la-cuddCof.o cudd/cudd_libcudd_la-cuddCompose.o cudd/cudd_libcudd_la-cuddDecomp.o cudd/cudd_libcudd_la-cuddEssent.o cudd/cudd_libcudd_la-cuddExact.o cudd/cudd_libcudd_la-cuddExport.o cudd/cudd_libcudd_la-cuddGenCof.o cudd/cudd_libcudd_la-cuddGenetic.o cudd/cudd_libcudd_la-cuddGroup.o cudd/cudd_libcudd_la-cuddHarwell.o cudd/cudd_libcudd_la-cuddInit.o cudd/cudd_libcudd_la-cuddInteract.o cudd/cudd_libcudd_la-cuddLCache.o cudd/cudd_libcudd_la-cuddLevelQ.o cudd/cudd_libcudd_la-cuddLinear.o cudd/cudd_libcudd_la-cuddLiteral.o cudd/cudd_libcudd_la-cuddMatMult.o cudd/cudd_libcudd_la-cuddPriority.o cudd/cudd_libcudd_la-cuddRead.o cudd/cudd_libcudd_la-cuddRef.o cudd/cudd_libcudd_la-cuddReorder.o cudd/cudd_libcudd_la-cuddSat.o cudd/cudd_libcudd_la-cuddSign.o cudd/cudd_libcudd_la-cuddSolve.o cudd/cudd_libcudd_la-cuddSplit.o cudd/cudd_libcudd_la-cuddSubsetHB.o cudd/cudd_libcudd_la-cuddSubsetSP.o cudd/cudd_libcudd_la-cuddSymmetry.o cudd/cudd_libcudd_la-cuddTable.o cudd/cudd_libcudd_la-cuddUtil.o cudd/cudd_libcudd_la-cuddWindow.o cudd/cudd_libcudd_la-cuddZddCount.o cudd/cudd_libcudd_la-cuddZddFuncs.o cudd/cudd_libcudd_la-cuddZddGroup.o cudd/cudd_libcudd_la-cuddZddIsop.o cudd/cudd_libcudd_la-cuddZddLin.o cudd/cudd_libcudd_la-cuddZddMisc.o cudd/cudd_libcudd_la-cuddZddPort.o cudd/cudd_libcudd_la-cuddZddReord.o cudd/cudd_libcudd_la-cuddZddSetop.o cudd/cudd_libcudd_la-cuddZddSymm.o cudd/cudd_libcudd_la-cuddZddUtil.o util/cudd_libcudd_la-cpu_stats.o util/cudd_libcudd_la-cpu_time.o util/cudd_libcudd_la-cstringstream.o util/cudd_libcudd_la-datalimit.o util/cudd_libcudd_la-pathsearch.o util/cudd_libcudd_la-pipefork.o util/cudd_libcudd_la-prtime.o util/cudd_libcudd_la-safe_mem.o util/cudd_libcudd_la-strsav.o util/cudd_libcudd_la-texpand.o util/cudd_libcudd_la-ucbqsort.o st/cudd_libcudd_la-st.o epd/cudd_libcudd_la-epd.o mtr/cudd_libcudd_la-mtrBasic.o mtr/cudd_libcudd_la-mtrGroup.o cplusplus/cudd_libcudd_la-cuddObj.o
+libtool: link: ranlib cudd/.libs/libcudd.a
+libtool: link: ( cd "cudd/.libs" && rm -f "libcudd.la" && ln -s "../libcudd.la" "libcudd.la" )
+[  7%] Performing install step for 'libcudd.a'
+ /bin/mkdir -p '/usr/local/include'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   cudd/libcudd.la '/usr/local/lib'
+ /usr/bin/install -c -m 644 cudd/cudd.h cplusplus/cuddObj.hh '/usr/local/include'
+libtool: install: /usr/bin/install -c cudd/.libs/libcudd.lai /usr/local/lib/libcudd.la
+libtool: install: /usr/bin/install -c cudd/.libs/libcudd.a /usr/local/lib/libcudd.a
+libtool: install: chmod 644 /usr/local/lib/libcudd.a
+libtool: install: ranlib /usr/local/lib/libcudd.a
+libtool: finish: PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+[  7%] Completed 'libcudd.a'
+[  9%] Built target libcudd.a
+Scanning dependencies of target downward
+[ 10%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_search.cc.o
+[ 11%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_estimate.cc.o
+[ 11%] Building CXX object search/CMakeFiles/downward.dir/symbolic/unidirectional_search.cc.o
+[ 11%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_state_space_manager.cc.o
+[ 11%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_params_search.cc.o
+[ 11%] Building CXX object search/CMakeFiles/downward.dir/symbolic/uniform_cost_search.cc.o
+[ 11%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_heuristic.cc.o
+[ 12%] Building CXX object search/CMakeFiles/downward.dir/symbolic/frontier.cc.o
+[ 12%] Building CXX object search/CMakeFiles/downward.dir/symbolic/open_list.cc.o
+[ 12%] Building CXX object search/CMakeFiles/downward.dir/symbolic/closed_list.cc.o
+[ 13%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_pdb.cc.o
+[ 13%] Building CXX object search/CMakeFiles/downward.dir/symbolic/original_state_space.cc.o
+[ 14%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_solution.cc.o
+[ 14%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_controller.cc.o
+[ 14%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_bucket.cc.o
+[ 15%] Building CXX object search/CMakeFiles/downward.dir/symbolic/transition_relation.cc.o
+[ 15%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_enums.cc.o
+[ 15%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_util.cc.o
+[ 16%] Building CXX object search/CMakeFiles/downward.dir/symbolic/opt_order.cc.o
+[ 16%] Building CXX object search/CMakeFiles/downward.dir/symbolic/sym_variables.cc.o
+[ 17%] Building CXX object search/CMakeFiles/downward.dir/ss/node.cc.o
+[ 17%] Building CXX object search/CMakeFiles/downward.dir/ss/type_system.cc.o
+[ 17%] Building CXX object search/CMakeFiles/downward.dir/ss/type.cc.o
+[ 18%] Building CXX object search/CMakeFiles/downward.dir/ss/type_children.cc.o
+[ 18%] Building CXX object search/CMakeFiles/downward.dir/ss/type_child.cc.o
+[ 19%] Building CXX object search/CMakeFiles/downward.dir/potentials/util.cc.o
+[ 19%] Building CXX object search/CMakeFiles/downward.dir/potentials/single_potential_heuristics.cc.o
+[ 19%] Building CXX object search/CMakeFiles/downward.dir/potentials/sample_based_potential_heuristics.cc.o
+[ 20%] Building CXX object search/CMakeFiles/downward.dir/potentials/potential_optimizer.cc.o
+[ 20%] Building CXX object search/CMakeFiles/downward.dir/potentials/potential_max_heuristic.cc.o
+[ 20%] Building CXX object search/CMakeFiles/downward.dir/potentials/potential_heuristic.cc.o
+[ 21%] Building CXX object search/CMakeFiles/downward.dir/potentials/potential_function.cc.o
+[ 21%] Building CXX object search/CMakeFiles/downward.dir/potentials/diverse_potential_heuristics.cc.o
+[ 22%] Building CXX object search/CMakeFiles/downward.dir/symbolic/gamer_pdbs_heuristic.cc.o
+[ 22%] Building CXX object search/CMakeFiles/downward.dir/pdbs/canonical_symbolic_pdbs_heuristic.cc.o
+[ 22%] Building CXX object search/CMakeFiles/downward.dir/pdbs/canonical_symbolic_pdbs.cc.o
+[ 23%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_factory_symbolic.cc.o
+[ 23%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_database_symbolic.cc.o
+[ 24%] Building CXX object search/CMakeFiles/downward.dir/pdbs/zero_one_pdbs_heuristic.cc.o
+[ 24%] Building CXX object search/CMakeFiles/downward.dir/pdbs/group_zero_one_pdbs.cc.o
+[ 24%] Building CXX object search/CMakeFiles/downward.dir/pdbs/zero_one_pdbs.cc.o
+[ 25%] Building CXX object search/CMakeFiles/downward.dir/pdbs/validation.cc.o
+[ 25%] Building CXX object search/CMakeFiles/downward.dir/pdbs/types.cc.o
+[ 25%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_heuristic_online.cc.o
+[ 26%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_heuristic.cc.o
+[ 26%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_factory_symbolic_online.cc.o
+[ 27%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_factory_online.cc.o
+[ 27%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_factory_explicit.cc.o
+[ 27%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pdb_factory.cc.o
+[ 28%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_generator.cc.o
+[ 28%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_generator_manual.cc.o
+[ 29%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_generator_greedy.cc.o
+[ 29%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_first_fit_decreasing.cc.o
+[ 29%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_systematic.cc.o
+[ 30%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_manual_multiple.cc.o
+[ 30%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_manual.cc.o
+[ 31%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_hillclimbing.cc.o
+[ 31%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_genetic_Online_SS.cc.o
+[ 31%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_genetic.cc.o
+[ 32%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_generator_combo.cc.o
+[ 32%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_database_symbolic_online.cc.o
+[ 32%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_database_online.cc.o
+[ 33%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_database_interface.cc.o
+[ 33%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_database.cc.o
+[ 34%] Building CXX object search/CMakeFiles/downward.dir/pdbs/pattern_collection_information.cc.o
+[ 34%] Building CXX object search/CMakeFiles/downward.dir/pdbs/max_cliques.cc.o
+[ 34%] Building CXX object search/CMakeFiles/downward.dir/pdbs/max_additive_pdb_sets.cc.o
+[ 35%] Building CXX object search/CMakeFiles/downward.dir/pdbs/match_tree_online.cc.o
+[ 35%] Building CXX object search/CMakeFiles/downward.dir/pdbs/match_tree.cc.o
+[ 36%] Building CXX object search/CMakeFiles/downward.dir/pdbs/incremental_canonical_pdbs.cc.o
+[ 36%] Building CXX object search/CMakeFiles/downward.dir/pdbs/dominance_pruning.cc.o
+[ 36%] Building CXX object search/CMakeFiles/downward.dir/pdbs/canonical_pdbs_heuristic.cc.o
+[ 37%] Building CXX object search/CMakeFiles/downward.dir/pdbs/canonical_pdbs.cc.o
+[ 37%] Building CXX object search/CMakeFiles/downward.dir/pdbs/first_fit_random_increasing_related_bin_packer.cc.o
+[ 37%] Building CXX object search/CMakeFiles/downward.dir/pdbs/first_fit_increasing_related_bin_packer.cc.o
+[ 38%] Building CXX object search/CMakeFiles/downward.dir/pdbs/first_fit_decreasing_related_bin_packer.cc.o
+[ 38%] Building CXX object search/CMakeFiles/downward.dir/pdbs/first_fit_decreasing_bin_packer.cc.o
+[ 39%] Building CXX object search/CMakeFiles/downward.dir/pdbs/bin_packer.cc.o
+[ 39%] Building CXX object search/CMakeFiles/downward.dir/operator_counting/state_equation_constraints.cc.o
+[ 39%] Building CXX object search/CMakeFiles/downward.dir/operator_counting/pho_constraints.cc.o
+[ 40%] Building CXX object search/CMakeFiles/downward.dir/operator_counting/operator_counting_heuristic.cc.o
+[ 40%] Building CXX object search/CMakeFiles/downward.dir/operator_counting/lm_cut_constraints.cc.o
+[ 41%] Building CXX object search/CMakeFiles/downward.dir/operator_counting/constraint_generator.cc.o
+[ 41%] Building CXX object search/CMakeFiles/downward.dir/landmarks/util.cc.o
+[ 41%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_status_manager.cc.o
+[ 42%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_graph_merged.cc.o
+[ 42%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_graph.cc.o
+[ 42%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_factory_zhu_givan.cc.o
+[ 43%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_factory_rpg_sasp.cc.o
+[ 43%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_factory_rpg_exhaust.cc.o
+[ 44%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_factory.cc.o
+[ 44%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_count_heuristic.cc.o
+[ 44%] Building CXX object search/CMakeFiles/downward.dir/landmarks/landmark_cost_assignment.cc.o
+[ 45%] Building CXX object search/CMakeFiles/downward.dir/landmarks/lama_ff_synergy.cc.o
+[ 45%] Building CXX object search/CMakeFiles/downward.dir/landmarks/h_m_landmarks.cc.o
+[ 46%] Building CXX object search/CMakeFiles/downward.dir/landmarks/exploration.cc.o
+[ 46%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/types.cc.o
+[ 46%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/transition_system.cc.o
+[ 47%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/shrink_strategy.cc.o
+[ 47%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/shrink_random.cc.o
+[ 47%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/shrink_fh.cc.o
+[ 48%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/shrink_bucket_based.cc.o
+[ 48%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/shrink_bisimulation.cc.o
+[ 49%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_strategy_factory_linear.cc.o
+[ 49%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_strategy_factory_dfp.cc.o
+[ 49%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_strategy_factory.cc.o
+[ 50%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_strategy.cc.o
+[ 50%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_linear.cc.o
+[ 51%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_dfp.cc.o
+[ 51%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/merge_and_shrink_heuristic.cc.o
+[ 51%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/labels.cc.o
+[ 52%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/label_reduction.cc.o
+[ 52%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/label_equivalence_relation.cc.o
+[ 53%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/heuristic_representation.cc.o
+[ 53%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/fts_factory.cc.o
+[ 53%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/factored_transition_system.cc.o
+[ 54%] Building CXX object search/CMakeFiles/downward.dir/merge_and_shrink/distances.cc.o
+[ 54%] Building CXX object search/CMakeFiles/downward.dir/cegar/utils_landmarks.cc.o
+[ 54%] Building CXX object search/CMakeFiles/downward.dir/cegar/utils.cc.o
+[ 55%] Building CXX object search/CMakeFiles/downward.dir/cegar/subtask_generators.cc.o
+[ 55%] Building CXX object search/CMakeFiles/downward.dir/cegar/split_selector.cc.o
+[ 56%] Building CXX object search/CMakeFiles/downward.dir/cegar/refinement_hierarchy.cc.o
+[ 56%] Building CXX object search/CMakeFiles/downward.dir/cegar/domains.cc.o
+[ 56%] Building CXX object search/CMakeFiles/downward.dir/cegar/cartesian_heuristic_function.cc.o
+[ 57%] Building CXX object search/CMakeFiles/downward.dir/cegar/arc.cc.o
+[ 57%] Building CXX object search/CMakeFiles/downward.dir/cegar/additive_cartesian_heuristic.cc.o
+[ 58%] Building CXX object search/CMakeFiles/downward.dir/cegar/abstract_state.cc.o
+[ 58%] Building CXX object search/CMakeFiles/downward.dir/cegar/abstract_search.cc.o
+[ 58%] Building CXX object search/CMakeFiles/downward.dir/cegar/abstraction.cc.o
+[ 59%] Building CXX object search/CMakeFiles/downward.dir/tasks/pdb_task.cc.o
+[ 59%] Building CXX object search/CMakeFiles/downward.dir/tasks/modified_operator_costs_task.cc.o
+[ 60%] Building CXX object search/CMakeFiles/downward.dir/tasks/domain_abstracted_task_factory.cc.o
+[ 60%] Building CXX object search/CMakeFiles/downward.dir/tasks/modified_goals_task.cc.o
+[ 60%] Building CXX object search/CMakeFiles/downward.dir/tasks/domain_abstracted_task.cc.o
+[ 61%] Building CXX object search/CMakeFiles/downward.dir/tasks/root_task.cc.o
+[ 61%] Building CXX object search/CMakeFiles/downward.dir/tasks/delegating_task.cc.o
+[ 61%] Building CXX object search/CMakeFiles/downward.dir/tasks/cost_adapted_task.cc.o
+[ 62%] Building CXX object search/CMakeFiles/downward.dir/heuristics/max_heuristic.cc.o
+[ 62%] Building CXX object search/CMakeFiles/downward.dir/heuristics/lm_cut_landmarks.cc.o
+[ 63%] Building CXX object search/CMakeFiles/downward.dir/heuristics/lm_cut_heuristic.cc.o
+[ 63%] Building CXX object search/CMakeFiles/downward.dir/heuristics/hm_heuristic.cc.o
+[ 63%] Building CXX object search/CMakeFiles/downward.dir/heuristics/goal_count_heuristic.cc.o
+[ 64%] Building CXX object search/CMakeFiles/downward.dir/heuristics/ff_heuristic.cc.o
+[ 64%] Building CXX object search/CMakeFiles/downward.dir/domain_transition_graph.cc.o
+[ 64%] Building CXX object search/CMakeFiles/downward.dir/heuristics/cg_cache.cc.o
+[ 65%] Building CXX object search/CMakeFiles/downward.dir/heuristics/cg_heuristic.cc.o
+[ 65%] Building CXX object search/CMakeFiles/downward.dir/heuristics/cea_heuristic.cc.o
+[ 66%] Building CXX object search/CMakeFiles/downward.dir/heuristics/blind_search_heuristic.cc.o
+[ 66%] Building CXX object search/CMakeFiles/downward.dir/heuristics/additive_heuristic.cc.o
+[ 66%] Building CXX object search/CMakeFiles/downward.dir/heuristics/relaxation_heuristic.cc.o
+[ 67%] Building CXX object search/CMakeFiles/downward.dir/lp/lp_solver.cc.o
+[ 67%] Building CXX object search/CMakeFiles/downward.dir/lp/lp_internals.cc.o
+[ 68%] Building CXX object search/CMakeFiles/downward.dir/search_engines/lazy_search.cc.o
+[ 68%] Building CXX object search/CMakeFiles/downward.dir/search_engines/iterated_search.cc.o
+[ 68%] Building CXX object search/CMakeFiles/downward.dir/search_engines/enforced_hill_climbing_search.cc.o
+[ 69%] Building CXX object search/CMakeFiles/downward.dir/search_engines/eager_search.cc.o
+[ 69%] Building CXX object search/CMakeFiles/downward.dir/search_engines/search_common.cc.o
+[ 70%] Building CXX object search/CMakeFiles/downward.dir/pruning/stubborn_sets_ec.cc.o
+[ 70%] Building CXX object search/CMakeFiles/downward.dir/pruning/stubborn_sets.cc.o
+[ 70%] Building CXX object search/CMakeFiles/downward.dir/pruning/stubborn_sets_simple.cc.o
+[ 71%] Building CXX object search/CMakeFiles/downward.dir/pruning/null_pruning_method.cc.o
+[ 71%] Building CXX object search/CMakeFiles/downward.dir/evaluators/sum_evaluator.cc.o
+[ 71%] Building CXX object search/CMakeFiles/downward.dir/evaluators/weighted_evaluator.cc.o
+[ 72%] Building CXX object search/CMakeFiles/downward.dir/evaluators/pref_evaluator.cc.o
+[ 72%] Building CXX object search/CMakeFiles/downward.dir/evaluators/max_evaluator.cc.o
+[ 73%] Building CXX object search/CMakeFiles/downward.dir/evaluators/combining_evaluator.cc.o
+[ 73%] Building CXX object search/CMakeFiles/downward.dir/evaluators/g_evaluator.cc.o
+[ 73%] Building CXX object search/CMakeFiles/downward.dir/evaluators/const_evaluator.cc.o
+[ 74%] Building CXX object search/CMakeFiles/downward.dir/utils/timer.cc.o
+[ 74%] Building CXX object search/CMakeFiles/downward.dir/utils/system_windows.cc.o
+[ 75%] Building CXX object search/CMakeFiles/downward.dir/utils/system_unix.cc.o
+[ 75%] Building CXX object search/CMakeFiles/downward.dir/utils/system.cc.o
+[ 75%] Building CXX object search/CMakeFiles/downward.dir/utils/rng_options.cc.o
+[ 76%] Building CXX object search/CMakeFiles/downward.dir/utils/rng.cc.o
+[ 76%] Building CXX object search/CMakeFiles/downward.dir/utils/memory.cc.o
+[ 76%] Building CXX object search/CMakeFiles/downward.dir/utils/math.cc.o
+[ 77%] Building CXX object search/CMakeFiles/downward.dir/utils/markup.cc.o
+[ 77%] Building CXX object search/CMakeFiles/downward.dir/utils/logging.cc.o
+[ 78%] Building CXX object search/CMakeFiles/downward.dir/utils/countdown_timer.cc.o
+[ 78%] Building CXX object search/CMakeFiles/downward.dir/options/type_namer.cc.o
+[ 78%] Building CXX object search/CMakeFiles/downward.dir/options/type_documenter.cc.o
+[ 79%] Building CXX object search/CMakeFiles/downward.dir/options/token_parser.cc.o
+[ 79%] Building CXX object search/CMakeFiles/downward.dir/options/synergy.cc.o
+[ 80%] Building CXX object search/CMakeFiles/downward.dir/options/registries.cc.o
+[ 80%] Building CXX object search/CMakeFiles/downward.dir/options/plugin.cc.o
+[ 80%] Building CXX object search/CMakeFiles/downward.dir/options/predefinitions.cc.o
+[ 81%] Building CXX object search/CMakeFiles/downward.dir/options/parse_tree.cc.o
+[ 81%] Building CXX object search/CMakeFiles/downward.dir/options/options.cc.o
+[ 81%] Building CXX object search/CMakeFiles/downward.dir/options/option_parser.cc.o
+[ 82%] Building CXX object search/CMakeFiles/downward.dir/options/errors.cc.o
+[ 83%] Building CXX object search/CMakeFiles/downward.dir/options/doc_printer.cc.o
+[ 83%] Building CXX object search/CMakeFiles/downward.dir/options/doc_store.cc.o
+[ 83%] Building CXX object search/CMakeFiles/downward.dir/options/bounds.cc.o
+[ 83%] Building CXX object search/CMakeFiles/downward.dir/open_lists/type_based_open_list.cc.o
+[ 84%] Building CXX object search/CMakeFiles/downward.dir/open_lists/tiebreaking_open_list.cc.o
+[ 84%] Building CXX object search/CMakeFiles/downward.dir/open_lists/standard_scalar_open_list.cc.o
+[ 85%] Building CXX object search/CMakeFiles/downward.dir/open_lists/pareto_open_list.cc.o
+[ 85%] Building CXX object search/CMakeFiles/downward.dir/open_lists/open_list_factory.cc.o
+[ 85%] Building CXX object search/CMakeFiles/downward.dir/open_lists/bucket_open_list.cc.o
+[ 86%] Building CXX object search/CMakeFiles/downward.dir/open_lists/epsilon_greedy_open_list.cc.o
+[ 86%] Building CXX object search/CMakeFiles/downward.dir/open_lists/open_list.cc.o
+[ 86%] Building CXX object search/CMakeFiles/downward.dir/open_lists/alternation_open_list.cc.o
+[ 87%] Building CXX object search/CMakeFiles/downward.dir/variable_order_finder.cc.o
+[ 87%] Building CXX object search/CMakeFiles/downward.dir/task_tools.cc.o
+[ 88%] Building CXX object search/CMakeFiles/downward.dir/task_proxy.cc.o
+[ 88%] Building CXX object search/CMakeFiles/downward.dir/successor_generator.cc.o
+[ 88%] Building CXX object search/CMakeFiles/downward.dir/state_registry.cc.o
+[ 89%] Building CXX object search/CMakeFiles/downward.dir/state_id.cc.o
+[ 89%] Building CXX object search/CMakeFiles/downward.dir/segmented_vector.cc.o
+[ 90%] Building CXX object search/CMakeFiles/downward.dir/search_statistics.cc.o
+[ 90%] Building CXX object search/CMakeFiles/downward.dir/search_space.cc.o
+[ 90%] Building CXX object search/CMakeFiles/downward.dir/search_progress.cc.o
+[ 91%] Building CXX object search/CMakeFiles/downward.dir/search_node_info.cc.o
+[ 91%] Building CXX object search/CMakeFiles/downward.dir/search_engine.cc.o
+[ 92%] Building CXX object search/CMakeFiles/downward.dir/scalar_evaluator.cc.o
+[ 92%] Building CXX object search/CMakeFiles/downward.dir/sampling.cc.o
+[ 92%] Building CXX object search/CMakeFiles/downward.dir/priority_queue.cc.o
+[ 93%] Building CXX object search/CMakeFiles/downward.dir/pruning_method.cc.o
+[ 93%] Building CXX object search/CMakeFiles/downward.dir/per_state_information.cc.o
+[ 93%] Building CXX object search/CMakeFiles/downward.dir/operator_cost_function.cc.o
+[ 94%] Building CXX object search/CMakeFiles/downward.dir/operator_cost.cc.o
+[ 94%] Building CXX object search/CMakeFiles/downward.dir/mutex_group.cc.o
+[ 95%] Building CXX object search/CMakeFiles/downward.dir/int_packer.cc.o
+[ 95%] Building CXX object search/CMakeFiles/downward.dir/heuristic.cc.o
+[ 95%] Building CXX object search/CMakeFiles/downward.dir/heuristic_cache.cc.o
+[ 96%] Building CXX object search/CMakeFiles/downward.dir/global_state.cc.o
+[ 96%] Building CXX object search/CMakeFiles/downward.dir/globals.cc.o
+[ 97%] Building CXX object search/CMakeFiles/downward.dir/global_operator.cc.o
+[ 97%] Building CXX object search/CMakeFiles/downward.dir/evaluation_result.cc.o
+[ 97%] Building CXX object search/CMakeFiles/downward.dir/evaluation_context.cc.o
+[ 98%] Building CXX object search/CMakeFiles/downward.dir/equivalence_relation.cc.o
+[ 98%] Building CXX object search/CMakeFiles/downward.dir/causal_graph.cc.o
+[ 98%] Building CXX object search/CMakeFiles/downward.dir/axioms.cc.o
+[ 99%] Building CXX object search/CMakeFiles/downward.dir/abstract_task.cc.o
+[ 99%] Building CXX object search/CMakeFiles/downward.dir/planner.cc.o
+[100%] Linking CXX executable ../bin/downward
+[100%] Built target downward
+Building configuration release64
+Built configuration release64 successfully
+Adding deffile section labels to container
+Adding runscript
+Finalizing Singularity container
+Calculating final size for metadata...
+Skipping checks
+Building Singularity image...
+Singularity container built: container.img
+Cleaning up...

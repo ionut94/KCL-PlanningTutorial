@@ -1,0 +1,18 @@
++ dirname /input/Singularity
++ REPO_ROOT=/input
++ cp -r /input/ /usr/local/var/singularity/mnt/container/planner
++ apt-get update
++ apt-get -y install cmake g++ g++-multilib mercurial make python autotools-dev automake
+debconf: delaying package configuration, since apt-utils is not installed
++ cd /planner
++ ./build.py release64 -j6
+libcudd 64-bits build
+configure: WARNING: Doxygen not found - continuing without Doxygen support
+configure: WARNING: pdflatex not found - unable to compile manual to PDF
+configure: WARNING: makeindex not found - unable to compile manual to PDF
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
++ rm -rf .hg
++ rm -rf /planner/builds/release64/search/CMakeFiles/
++ rm -rf /planner/src

@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "/planner/fast-downward.py", line 6, in <module>
+    main()
+  File "/planner/driver/main.py", line 34, in main
+    run_components.run_translate(args)
+  File "/planner/driver/run_components.py", line 98, in run_translate
+    time_limit=time_limit, memory_limit=memory_limit)
+  File "/planner/driver/run_components.py", line 83, in call_component
+    stdin=stdin, time_limit=time_limit, memory_limit=memory_limit)
+  File "/planner/driver/call.py", line 30, in check_call
+    return subprocess.check_call(cmd, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 536, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 523, in call
+Traceback (most recent call last):
+  File "/planner/builds/release64/bin/translate/translate.py", line 683, in <module>
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/lib/python2.7/subprocess.py", line 1392, in wait
+    main()
+  File "/planner/builds/release64/bin/translate/translate.py", line 673, in main
+    sas_task = pddl_to_sas(task)
+      File "/planner/builds/release64/bin/translate/translate.py", line 517, in pddl_to_sas
+pid, sts = _eintr_retry_call(os.waitpid, self.pid, 0)
+  File "/usr/lib/python2.7/subprocess.py", line 476, in _eintr_retry_call
+    return func(*args)
+    reachable_action_params) = instantiate.explore(task)
+  File "/planner/builds/release64/bin/translate/instantiate.py", line 78, in explore
+KeyboardInterrupt
+    return instantiate(task, model)
+  File "/planner/builds/release64/bin/translate/instantiate.py", line 58, in instantiate
+    task.use_min_cost_metric)
+  File "/planner/builds/release64/bin/translate/pddl/actions.py", line 91, in instantiate
+    objects_by_type, effects)
+  File "/planner/builds/release64/bin/translate/pddl/effects.py", line 56, in instantiate
+    self._instantiate(var_mapping, init_facts, fluent_facts, result)
+  File "/planner/builds/release64/bin/translate/pddl/effects.py", line 64, in _instantiate
+    self.literal.instantiate(var_mapping, init_facts, fluent_facts, effects)
+  File "/planner/builds/release64/bin/translate/pddl/conditions.py", line 287, in instantiate
+    atom = Atom(self.predicate, args)
+  File "/planner/builds/release64/bin/translate/pddl/conditions.py", line 226, in __init__
+    self.predicate = predicate
+KeyboardInterrupt

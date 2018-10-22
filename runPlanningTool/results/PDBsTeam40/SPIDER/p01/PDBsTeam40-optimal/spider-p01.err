@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/planner/fast-downward.py", line 6, in <module>
+    main()
+  File "/planner/driver/main.py", line 36, in main
+    run_components.run_preprocess(args)
+  File "/planner/driver/run_components.py", line 114, in run_preprocess
+    time_limit=time_limit, memory_limit=memory_limit)
+  File "/planner/driver/run_components.py", line 83, in call_component
+    stdin=stdin, time_limit=time_limit, memory_limit=memory_limit)
+  File "/planner/driver/call.py", line 28, in check_call
+    return subprocess.check_call(cmd, stdin=stdin_file, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 536, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 523, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/lib/python2.7/subprocess.py", line 1392, in wait
+    pid, sts = _eintr_retry_call(os.waitpid, self.pid, 0)
+  File "/usr/lib/python2.7/subprocess.py", line 476, in _eintr_retry_call
+    return func(*args)
+KeyboardInterrupt
